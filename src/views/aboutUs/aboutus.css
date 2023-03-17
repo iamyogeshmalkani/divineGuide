@@ -1,0 +1,64 @@
+.aboutus {
+    gap: 50px;
+    padding-top: 150px !important;
+    justify-content: space-between;
+}
+
+.aboutusInfo {
+    width: 55%;
+}
+
+.aboutus_desc {
+    margin-top: 50px !important;
+}
+
+.aboutus_heading {
+    border-left: 4px solid purple;
+    color: purple;
+    width: max-content;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.aboutus_heading p {
+    color: grey;
+}
+
+.aboutUsImage {
+    border: 4px solid purple;
+    border-radius: 50%;
+    padding: 10px;
+    float: right;
+}
+
+.aboutUsImage img {
+    border-radius: 50%;
+    width: 450px;
+    height: 400px;
+}
+
+@media (max-width: 950px) {
+    .aboutus {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .aboutusInfo {
+        width: 90%;
+    }
+
+    .aboutUsImage img {
+        width: 400px;
+        height: 400px;
+    }
+
+
+}
+
+@media (max-width: 950px) {
+    .aboutUsImage img {
+        width: 90%;
+        height: 300px;
+    }
+}

@@ -1,0 +1,38 @@
+.services_main {
+    background-color: blueviolet;
+}
+
+.services_Offered {
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.serive_card {
+    height: 400px;
+    width: 20rem;
+}
+
+.card {
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.card-title {
+    color: rgb(75, 8, 138);
+
+}
+
+.card-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
