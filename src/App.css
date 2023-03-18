@@ -59,6 +59,15 @@
   bottom: 20px;
   right: 10px;
   z-index: 100;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  justify-content: center;
+}
+
+.totop img {
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes App-logo-spin {

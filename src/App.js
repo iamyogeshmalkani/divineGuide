@@ -19,7 +19,9 @@ function App() {
   };
   return (
     <div className="App">
-      <button class="btn btn-primary totop" type="submit" onClick={() => { scrollToTop() }}>Top</button>
+      <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
+        <img src='icons/arrow-up.svg'></img>
+      </button>
       <Homepage refrs={refrs} />
       <Services refrs={services} />
       <AboutUs refrs={aboutSection} />

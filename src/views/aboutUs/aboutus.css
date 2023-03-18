@@ -45,24 +45,27 @@
 @media (max-width: 950px) {
     .aboutus {
         flex-direction: column !important;
-        align-items: center;
+        align-items: left;
+        padding: 150px 20px !important;
     }
 
     .aboutusInfo {
         width: 90%;
     }
 
-    .aboutUsImage img {
-        width: 400px;
-        height: 400px;
+    .aboutUsImage {
+        width: 60%;
+        margin: auto !important;
     }
 
-
+    .aboutUsImage img {
+        width: 100%;
+        height: 300px;
+    }
 }
 
-@media (max-width: 950px) {
-    .aboutUsImage img {
-        width: 90%;
-        height: 300px;
+@media (max-width: 768px) {
+    .aboutUsImage {
+        width: 80%;
     }
 }
