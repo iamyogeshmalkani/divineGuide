@@ -12,7 +12,20 @@ const scrollDown = (ref) => {
 };
 function modalHandler(str) {
     $('#services_homepage_modal_title').html(str);
+    let services_html = ``;
+    services_homepage[str].map((service) => {
+        services_html += `<div class="flex-row"><img src="icons/${service}.png"></img><p>${service}</p></div>`
+    })
+    $('.services_offered').html(services_html);
+    $('.services_homepage_image').attr('src', `icons/navbar/${str}.png`)
 
+}
+const services_homepage = {
+    'astro': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
+    'taro_card': ['Love and Relationship', 'Marriage', "Confusion Solution"],
+    'l_and_r': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
+    'hand_writing_reading': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
+    'astro_2': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
 }
 
 export default function Homepage(props) {
@@ -49,11 +62,11 @@ export default function Homepage(props) {
             <div className='flex-row tagline_services'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='flex-col services_homepage'>
-                    <img src='icons/navbar/astrology.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro')}></img>
-                    <img src='icons/navbar/taro-card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro')}></img>
-                    <img src='icons/navbar/Love-and-Relationship-main-icon.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('astro')}></img>
-                    <img src='icons/navbar/hand-writting-reading-main-icon.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('astro')}></img>
-                    <img src='icons/navbar/astrology-2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro')}></img>
+                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro')}></img>
+                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('taro_card')}></img>
+                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('l_and_r')}></img>
+                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('hand_writing_reading')}></img>
+                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro_2')}></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>
@@ -65,18 +78,15 @@ export default function Homepage(props) {
             </div>
             <div class="modal fade" id="services_homepage_modal" tabindex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered m-auto" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="services_homepage_modal_title">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                    <div class="services_hover_card">
+                        <div class="service_hover_card_img">
+                            <img className='services_homepage_image' src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg" alt="user-image" />
                         </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div className='flex-col'>
+                            <p className='pl-2'>You can avail below services.
+                            </p>
+                            <div className='flex-row flex-wrap services_offered'>
+                            </div>
                         </div>
                     </div>
                 </div>

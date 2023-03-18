@@ -11,7 +11,7 @@ export default function Services(props) {
     }
     return (
         <div className='services_main' ref={props.refrs}>
-            <div className='services_main_heading flex-col '> <h1>Services</h1>
+            <div className='services_main_heading flex-col'> <h1>Services</h1>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content</p>
             </div>
 

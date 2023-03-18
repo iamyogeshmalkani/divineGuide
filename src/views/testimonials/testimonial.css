@@ -8,6 +8,11 @@
     height: 400px;
 }
 
+.testimonial_heading {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .card_img {
     width: 120px;
     height: 120px;

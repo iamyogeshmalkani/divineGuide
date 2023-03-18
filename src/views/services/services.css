@@ -2,7 +2,7 @@
     background-image: url('../../../public/icons/services/service-bg.jpg');
     padding: 100px 50px;
     background-repeat: no-repeat;
-    background-size: round;
+    background-size: cover;
 }
 
 .services_main_heading {
