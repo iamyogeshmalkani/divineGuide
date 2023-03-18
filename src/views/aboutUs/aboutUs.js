@@ -7,10 +7,10 @@ export default function AboutUs(props) {
         <div className='aboutus flex-row w-100 p-4' ref={props.refrs}>
             <div className='aboutusInfo flex-col'>
                 <div className='aboutus_heading'>
-                    <h1>
+                    <h1 className='text-heading'>
                         About Us
                     </h1>
-                    <p>Lorem Ipsum</p>
+                    <p className='text-heading'>Lorem Ipsum</p>
                 </div>
                 <p className='aboutus_desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 

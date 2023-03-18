@@ -1,5 +1,16 @@
 .services_main {
-    background-color: blueviolet;
+    background-image: url('../../../public/icons/services/service-bg.jpg');
+    padding: 100px 50px;
+    background-repeat: no-repeat;
+    background-size: round;
+}
+
+.services_main_heading {
+    color: white;
+    width: 80%;
+    margin: auto !important;
+    gap: 30px;
+    margin-bottom: 30px !important;
 }
 
 .services_Offered {
@@ -35,4 +46,10 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     white-space: normal;
+}
+
+@media (max-width: 900px) {
+    .services_main_heading {
+        width: 100%;
+    }
 }

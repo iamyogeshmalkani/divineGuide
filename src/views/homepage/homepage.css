@@ -1,12 +1,22 @@
 .homepage {
     background-color: rgb(22, 22, 85);
-    height: 500px;
+    height: max-content;
+    padding-bottom: 100px;
+    background-image: url('../../../public/icons/navbar/header-bg.jpg');
+    image-rendering: -webkit-optimize-contrast;
+    background-repeat: no-repeat;
+    background-size: round;
 }
 
-.mail_num p {
+.mail_num div {
     padding: 5px;
     margin: 0;
     color: white;
+    font-weight: 500;
+    gap: 10px;
+    align-items: baseline;
+    font-family: 'Montserrat Alternates', sans-serif;
+
 }
 
 .navbar_mobile_button {
@@ -50,28 +60,177 @@
 
 .tagLine {
     margin: 0;
-    position: absolute;
-    top: 200px;
-    left: 10px;
-    width: 50%;
+    margin: 200px 0px 0px 20px !important;
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* letter-spacing: 2px; */
+    width: 40%;
     text-align: left;
     color: white;
     border-left: 2px solid white;
     padding-left: 10px;
+    height: max-content;
 }
 
+.services_homepage {
+    position: relative;
+    width: 60%;
+    margin-top: 50px !important;
+    gap: 30px;
+    padding-right: 50px;
+}
 
-@media (max-width: 700px) {
-    .mail_num {
+.services_homepage img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.service_astro {
+    position: absolute;
+    left: 10%;
+    height: 230px !important;
+    width: 250px !important;
+
+}
+
+.service_taro {
+    position: relative;
+    left: 60%;
+    width: 180px !important;
+    height: 170px !important;
+}
+
+.service_l_r {
+    position: relative;
+    left: -10%;
+    width: 220px !important;
+    height: 180px !important;
+}
+
+.service_writing_read {
+    position: relative;
+    left: 80%;
+    top: -25%;
+    right: 10%;
+    width: 150px !important;
+    height: 170px !important;
+}
+
+.service_astro2 {
+    position: relative;
+    top: -30%;
+    left: 40%;
+    width: 180px !important;
+    height: 170px !important;
+}
+
+.social_medias {
+    position: fixed;
+    bottom: 2%;
+    left: 50px;
+    gap: 10px;
+}
+
+.social_medias i {
+    color: white;
+}
+
+.services_hover_card {
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin-top: 60px !important;
+    height: 200px;
+    background-color: transparent;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.services_hover_card img {
+    background-color: white;
+    opacity: 1 !important;
+}
+
+.service_hover_card_img {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 80px !important;
+    height: 80px !important;
+    margin: -40px auto 0 !important;
+}
+
+.service_hover_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#services_homepage_modal {
+    /* opacity: 0.5; */
+    border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+    .tagline_services {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .services_homepage {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
         justify-content: center;
     }
 
-    .tagline_services {
-        flex-direction: column !important;
+    .services_homepage img {
+        /* width: 150px;
+        height: 150px; */
+        opacity: 0.8;
+        position: relative;
+        left: 0;
+        top: 0;
     }
 
-    .tagline_services h1 {
-        width: 98%;
-        top: 10px;
+
+    .tagLine {
+        width: 95%;
+        margin-top: 50px !important;
+    }
+
+    .services_homepage {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mail_num {
+        justify-content: center !important;
+    }
+
+    .services_homepage img {
+        width: 170px !important;
+        height: 180px !important;
+        opacity: 0.8;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .services_homepage {
+        padding: 0;
+    }
+
+    .services_homepage img {
+        width: 100px !important;
+        height: 100px !important;
+        opacity: 0.8;
+    }
+
+    .mail_num {
+        font-size: xx-small;
     }
 }

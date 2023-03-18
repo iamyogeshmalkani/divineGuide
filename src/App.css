@@ -1,3 +1,13 @@
+.text-heading {
+  color: #3e186d
+}
+
+.text-content {
+  color: #656465;
+}
+
+
+
 .App {
   text-align: center;
   overflow-x: hidden;
@@ -5,6 +15,7 @@
 
 * {
   margin: 0 !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {

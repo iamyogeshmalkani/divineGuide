@@ -1,6 +1,6 @@
 .aboutus {
     gap: 50px;
-    padding-top: 150px !important;
+    padding: 150px 50px !important;
     justify-content: space-between;
 }
 
@@ -13,16 +13,20 @@
 }
 
 .aboutus_heading {
-    border-left: 4px solid purple;
-    color: purple;
+    border-left: 4px solid #3e186d;
     width: max-content;
     text-align: left;
     padding-left: 10px;
     margin: 0;
 }
 
+.aboutus_heading h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .aboutus_heading p {
-    color: grey;
+    font-weight: 600;
 }
 
 .aboutUsImage {
