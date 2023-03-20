@@ -8,16 +8,35 @@
     padding: 0px 40px 0px 40px;
 }
 
-.banner img {
+.banner>img {
     width: 90px;
     height: 90px;
     position: relative;
     top: 20px;
 }
 
+.banner>div {
+    align-items: center;
+
+}
+
 .banner h1,
 h3 {
     font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+}
+
+.special_offer {
+    border: 1px solid white;
+    padding: 5px;
 }
 
 @media (max-width: 900px) {
@@ -46,7 +65,7 @@ h3 {
     }
 
     .banner h3 {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
 

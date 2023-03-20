@@ -10,6 +10,10 @@
 
 .aboutus_desc {
     margin-top: 50px !important;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: left;
+
 }
 
 .aboutus_heading {
@@ -30,10 +34,11 @@
 }
 
 .aboutUsImage {
-    border: 4px solid purple;
+    border: 5px solid #3e186d;
     border-radius: 50%;
     padding: 10px;
     float: right;
+    height: fit-content;
 }
 
 .aboutUsImage img {
@@ -43,6 +48,11 @@
 }
 
 @media (max-width: 950px) {
+    .aboutus_desc {
+        text-align: center;
+
+    }
+
     .aboutus {
         flex-direction: column !important;
         align-items: left;

@@ -13,8 +13,17 @@
     margin: auto !important;
 }
 
+.blogs_heading h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.blog_cards {
+    flex-wrap: wrap;
+}
+
 .blog_card {
-    width: 60%;
+    width: 40%;
     margin: auto !important;
 }
 
