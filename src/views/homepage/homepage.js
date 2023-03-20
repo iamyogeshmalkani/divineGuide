@@ -17,15 +17,15 @@ function modalHandler(str) {
         services_html += `<div class="flex-row"><img src="icons/${service}.png"></img><p>${service}</p></div>`
     })
     $('.services_offered').html(services_html);
-    $('.services_homepage_image').attr('src', `icons/navbar/${str}.png`)
+    $('.services_homepage_image').attr('src', `icons/popups/${str}.png`)
 
 }
 const services_homepage = {
-    'astro': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
-    'taro_card': ['Love and Relationship', 'Marriage', "Confusion Solution"],
-    'l_and_r': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
-    'hand_writing_reading': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
-    'astro_2': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
+    'Astrology': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
+    'Tarot Card Reading': ['Love and Relationship', 'Marriage', "Confusion Solution"],
+    'Match Making': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
+    'Hand Writing Analysing': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
+    'Vastu': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
 }
 
 export default function Homepage(props) {
@@ -50,7 +50,7 @@ export default function Homepage(props) {
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['services']) }}>SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">BLOGS</a>
+                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
@@ -62,11 +62,11 @@ export default function Homepage(props) {
             <div className='flex-row tagline_services'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='flex-col services_homepage'>
-                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro')}></img>
-                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('taro_card')}></img>
-                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('l_and_r')}></img>
-                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('hand_writing_reading')}></img>
-                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astro_2')}></img>
+                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')}></img>
+                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')}></img>
+                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('Match Making')}></img>
+                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('Hand Writing Analysing')}></img>
+                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')}></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>

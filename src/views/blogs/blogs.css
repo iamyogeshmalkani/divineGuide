@@ -1,0 +1,55 @@
+.blogs>h1 {
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 20px;
+}
+
+.blogs>p {
+    padding: 20px;
+}
+
+.blogs_heading {
+    width: 60%;
+    margin: auto !important;
+}
+
+.blog_card {
+    width: 60%;
+    margin: auto !important;
+}
+
+.blogs_card_head {
+    align-items: center;
+}
+
+.head_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    gap: 20px;
+    background-color: #140d3f;
+}
+
+.header_info {
+    text-align: left;
+    padding: 20px;
+}
+
+.header_info h5 {
+    font-weight: 600 !important;
+
+}
+
+.blog_content img {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .blog_card {
+        width: 90%;
+    }
+
+    .blogs_heading {
+        width: 90%;
+    }
+}

@@ -4,9 +4,9 @@ import $ from "jquery"
 
 
 export default function Services(props) {
-    const data = [{ name: "vastu", description: "Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content", img: 'astro' }, { name: "Tarot Card Reading", description: "Some quick example text to build on the card title and make up the bulk of the card's content.", img: 'taro_card' }, { name: "Hand Writing Analysing", description: "Some quick example text to build on the card title and make up the bulk of the card's content.", img: 'hand_writing_reading' }, { name: "Match Making", description: "Some quick example text to build on the card title and make up the bulk of the card's content.", img: 'Match Making' }, { name: "Astrology", description: "Some quick example text to build on the card title and make up the bulk of the card's content.", img: 'astro_2' }]
+    const data = [{ name: "Vastu", description: "Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content" }, { name: "Tarot Card Reading", description: "Some quick example text to build on the card title and make up the bulk of the card's content." }, { name: "Hand Writing Analysing", description: "Some quick example text to build on the card title and make up the bulk of the card's content." }, { name: "Match Making", description: "Some quick example text to build on the card title and make up the bulk of the card's content." }, { name: "Astrology", description: "Some quick example text to build on the card title and make up the bulk of the card's content." }]
     function modalHandler(data) {
-        $('.testimonial_modal_image').attr('src', `icons/navbar/${data['img']}.png`);
+        $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
         $('.testimonial_modal_heading').html(data['name']);
         $('.testimonial_modal_description').html(data['description']);
     }
