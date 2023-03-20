@@ -48,6 +48,27 @@
     white-space: normal;
 }
 
+.testimonial_modal_card {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin: auto !important;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+}
+
+.testimonial_modal_image {
+    background-color: rgb(75, 8, 138) !important;
+}
+
+.testimonial_modal_card .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 @media (max-width: 900px) {
     .services_main_heading {
         width: 100%;

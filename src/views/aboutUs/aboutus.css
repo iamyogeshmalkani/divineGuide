@@ -54,18 +54,10 @@
     }
 
     .aboutUsImage {
-        width: 60%;
         margin: auto !important;
     }
 
     .aboutUsImage img {
         width: 100%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    .aboutUsImage {
-        width: 80%;
     }
 }

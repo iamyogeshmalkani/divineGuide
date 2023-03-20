@@ -63,13 +63,13 @@
 
 .tagLine {
     margin: 0;
-    margin: 200px 0px 0px 20px !important;
+    margin: 200px 0px 0px 10px !important;
     font-family: 'Montserrat Alternates', sans-serif;
     /* letter-spacing: 2px; */
     width: 40%;
     text-align: left;
     color: white;
-    border-left: 2px solid white;
+    border-left: 4px solid white;
     padding-left: 10px;
     height: max-content;
 }
