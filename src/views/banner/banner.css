@@ -57,6 +57,7 @@ fieldset legend {
     }
 
     fieldset {
+        border: 1px solid transparent;
         padding: 0px 30px;
     }
 
