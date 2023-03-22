@@ -1,13 +1,13 @@
 import './App.css';
 import { useRef } from 'react';
+import { Suspense, lazy } from 'react';
 import Homepage from './views/homepage/homepage';
 import Services from './views/services/services';
 import AboutUs from './views/aboutUs/aboutUs';
 import Testimonial from './views/testimonials/testimonial';
-import Blog from './views/blogs/blogs';
 import Banner from './views/banner/banner';
 
-
+const Blog = lazy(() => import("./views/blogs/blogs"));
 function App() {
   const aboutSection = useRef(null);
   const services = useRef(null);
@@ -30,7 +30,9 @@ function App() {
       <Services refrs={services} />
       <AboutUs refrs={aboutSection} />
       <Testimonial refrs={testimonials} />
-      <Blog refrs={blogs} />
+      <Suspense fallback={<div>Loading</div>}>
+        <Blog refrs={blogs} />
+      </Suspense>
     </div>
   );
 }

@@ -1,3 +1,16 @@
+fieldset {
+    border: 3px solid transparent;
+    border-color: white;
+    padding: 0px 20px;
+    width: 200px;
+}
+
+fieldset legend {
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
 .banner {
     width: 100%;
     background-color: rgb(187, 6, 6);
@@ -17,22 +30,15 @@
 
 .banner>div {
     align-items: center;
+    gap: 20px;
 
 }
 
-.banner h1,
-h3 {
+.banner h1 {
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.banner h1 {
-    font-size: 3rem;
-}
-
-.banner h3 {
-    font-size: 1.5rem;
-}
 
 .special_offer {
     border: 1px solid white;
@@ -50,9 +56,15 @@ h3 {
         font-size: 1.5rem;
     }
 
-    .banner h3 {
-        font-size: 1rem;
+    fieldset {
+        padding: 0px 30px;
     }
+
+    fieldset legend {
+        font-size: 1rem;
+
+    }
+
 }
 
 @media (max-width: 468px) {
@@ -64,8 +76,12 @@ h3 {
         font-size: 1rem;
     }
 
-    .banner h3 {
-        font-size: 0.7rem;
+    fieldset {
+        width: fit-content;
+    }
+
+    fieldset legend {
+        font-size: 0.7rem !important;
     }
 
 

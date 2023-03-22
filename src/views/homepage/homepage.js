@@ -32,8 +32,8 @@ export default function Homepage(props) {
     return (
         <div className='homepage'>
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
-                <div className='flex-row'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>  +91-8860417666</div>
-                <div className='flex-row'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>  yogeshmalkani28@gmail.com</div>
+                <div className='flex-row'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
+                <div className='flex-row'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>yogeshmalkani28@gmail.com</div>
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
                 <div class="container-fluid">

@@ -19,9 +19,15 @@
     justify-content: center;
 }
 
-.serive_card {
-    height: 400px;
+.service_card {
+    height: fit-content;
     width: 20rem;
+}
+
+.readmore {
+    text-decoration: underline !important;
+    color: rgb(75, 8, 138) !important;
+    cursor: pointer;
 }
 
 .card {
@@ -32,11 +38,20 @@
 
 .card-img-top {
     border-radius: 20px;
+    height: 220px;
 }
 
 .card-title {
     color: rgb(75, 8, 138);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
+.card_title {
+    border-bottom: 1px solid rgb(75, 8, 138);
+    width: 20%;
+    margin: auto !important;
+    margin-bottom: 10px !important;
 }
 
 .card-text {
@@ -46,6 +61,7 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     white-space: normal;
+    text-align: center;
 }
 
 .testimonial_modal_card {
