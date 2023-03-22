@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./homepage.css"
 import $ from "jquery";
 
@@ -27,13 +27,35 @@ const services_homepage = {
     'Hand Writing Analysing': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
     'Vastu': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
 }
+function openModalOnHover(evt) {
+    $(`.${evt.target.className}`).click();
+}
 
 export default function Homepage(props) {
+    const [displayUpdates, setdisplayUpdates] = useState(false);
     return (
         <div className='homepage'>
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
-                <div className='flex-row'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
-                <div className='flex-row'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>yogeshmalkani28@gmail.com</div>
+                <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
+                <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>yogeshmalkani28@gmail.com</div>
+                <img src='icons/fire-update.png' className='update_fire' onClick={() => { var temp = displayUpdates; setdisplayUpdates(!temp) }}></img>
+                <div className='blogs_updates flex-col' style={{ display: displayUpdates ? 'flex' : 'none' }}>
+                    <div className='flex-row align-items-center update'>
+                        <img src='icons/fire-update.png' className='update_fire'></img>
+                        <p>New Astro Todays</p>
+                        <p>2 March 2023</p>
+                    </div>
+                    <div className='flex-row align-items-center update'>
+                        <img src='icons/fire-update.png' className='update_fire'></img>
+                        <p>New Astro Todays</p>
+                        <p>2 March 2023</p>
+                    </div>
+                    <div className='flex-row align-items-center update'>
+                        <img src='icons/fire-update.png' className='update_fire'></img>
+                        <p>New Astro Todays</p>
+                        <p>2 March 2023</p>
+                    </div>
+                </div>
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
                 <div class="container-fluid">
@@ -50,10 +72,10 @@ export default function Homepage(props) {
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['services']) }}>SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS</a>
+                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
+                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup>New</sup></a>
                             </li>
                         </ul>
                     </div>
@@ -62,11 +84,11 @@ export default function Homepage(props) {
             <div className='flex-row tagline_services'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='flex-col services_homepage'>
-                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')}></img>
-                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')}></img>
-                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('Match Making')}></img>
-                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('Hand Writing Analysing')}></img>
-                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')}></img>
+                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')} onMouseOver={(e) => openModalOnHover(e)}></img>
+                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')} onMouseOver={(e) => openModalOnHover(e)}></img>
+                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('Match Making')} onMouseOver={(e) => openModalOnHover(e)}></img>
+                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('Hand Writing Analysing')} onMouseOver={(e) => openModalOnHover(e)}></img>
+                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')} onMouseOver={(e) => openModalOnHover(e)}></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>

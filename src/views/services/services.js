@@ -27,7 +27,7 @@ export default function Services(props) {
     { name: "Match Making", description: "Kundli Matching or Guna Milan is the most integral aspect of every Hindu marriage. Hindu astrology lays strong emphasis on Janam Kundali Milan before a couple ties the knot. It is to check compatibility of two individuals in order to have an enchanted and successful marriage." },
     { name: "Astrology", description: "Astrology can help us to understand the past , help to work on present and guide for better future. Besides helping in avoiding strains in marital relationships, business and professional matters, astrology also helps in enjoying good health, prosperity and spiritual advancement" }]
     function modalHandler(data) {
-        $('.testimonial_modal_image').attr('src', `icons/services/${data['name']}.jpg`);
+        $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
         $('.testimonial_modal_heading').html(data['name']);
         $('.testimonial_modal_description').html(data['description']);
     }

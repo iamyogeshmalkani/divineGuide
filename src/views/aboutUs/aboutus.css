@@ -44,7 +44,6 @@
 .aboutUsImage img {
     border-radius: 50%;
     width: 450px;
-    height: 400px;
 }
 
 @media (max-width: 950px) {

@@ -8,7 +8,35 @@
     background-size: cover;
 }
 
-.mail_num div {
+.update_fire {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.blogs_updates {
+    height: fit-content;
+    background-color: #020d3e;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 22%;
+    right: 1%;
+    z-index: 100;
+    gap: 10px;
+}
+
+
+.blogs_updates .update {
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #1938c1;
+    color: white;
+}
+
+.mail_num .mail,
+.num {
     padding: 5px;
     margin: 0;
     color: white;
@@ -36,7 +64,15 @@
     font-size: larger;
     font-size: medium;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.nav-link sup {
+    color: rgb(225, 16, 16);
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 2px;
 }
 
 .nav-link:hover,
@@ -104,7 +140,8 @@
 
 .service_l_r {
     position: relative;
-    left: -10%;
+    top: 5%;
+    left: 0%;
     width: 220px !important;
     height: 180px !important;
 }
@@ -112,7 +149,7 @@
 .service_writing_read {
     position: relative;
     left: 80%;
-    top: -25%;
+    top: -20%;
     right: 10%;
     width: 150px !important;
     height: 170px !important;

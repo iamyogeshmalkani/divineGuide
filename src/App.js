@@ -27,8 +27,8 @@ function App() {
       </button>
       <Banner />
       <Homepage refrs={refrs} />
-      <Services refrs={services} />
       <AboutUs refrs={aboutSection} />
+      <Services refrs={services} />
       <Testimonial refrs={testimonials} />
       <Suspense fallback={<div>Loading</div>}>
         <Blog refrs={blogs} />
