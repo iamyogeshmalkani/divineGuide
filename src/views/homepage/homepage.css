@@ -96,6 +96,10 @@
 
 }
 
+.mail_and_num {
+    gap: 10px;
+}
+
 .navbar_mobile_button {
     border: none;
     border-radius: 5px;
@@ -326,6 +330,11 @@
         justify-content: center !important;
     }
 
+    .service_l_r {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
     .services_homepage img {
         width: 170px !important;
         height: 180px !important;
@@ -333,9 +342,16 @@
     }
 
 
+
+
 }
 
 @media (max-width: 490px) {
+    .navbar-brand {
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+
     .services_homepage {
         padding: 0;
     }
@@ -349,6 +365,11 @@
     .service_l_r {
         width: 200px !important;
         height: 200px !important;
+    }
+
+    .mail_and_num {
+        flex-direction: column !important;
+
     }
 
     .mail_num {

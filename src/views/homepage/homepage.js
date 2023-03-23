@@ -46,8 +46,11 @@ export default function Homepage(props) {
     return (
         <div className='homepage'>
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
-                <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
-                <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>officialastrologerDeepagupta@gmail.com</div>
+                <div className='mail_and_num flex-row'>
+                    <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
+                    <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>officialastrologerDeepagupta@gmail.com</div>
+                </div>
+
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { var temp = displayUpdates; setdisplayUpdates(!temp) }}></img>
                 <div className='blogs_updates flex-col' style={{ display: displayUpdates ? 'flex' : 'none' }}>
                     <div className='flex-row align-items-center update'>
