@@ -21,11 +21,15 @@ export default function Services(props) {
         });
     }, []);
 
-    const data = [{ name: "Vastu", description: "Vastu Shastra is based on the concept of scientifically combining the five basic elements – earth, water, fire, air and sky – to create a pleasant setting. Vasthu principles integrated with architecture boost health, wealth, energy and prosperity and make the living or working atmosphere serene and enlightened." },
-    { name: "Tarot Card Reading", description: "Tarot is a divination tool which is used to get guidance and is commonly used to measure potential outcomes and evaluate influences surrounding a person or an event. It helps to give answers to our daily questions of life ." },
+    const data = [{
+        name: "Vastu", description: `Vastu Shastra is based on the concept of scientifically combining the five basic elements – earth, water, fire, air and sky – to create a pleasant setting.If any element is more or less then it won’t give fruitful outcome.So, It is advisable to  have these elements to be balanced in house so that your atmosphere can provide fruitful outcome. 
+        <br></br>यत पिंडे तत ब्रह्माण्डे <br></br>(whatever is there in the microcosm is also there in the macrocosm)
+        <br></br>(जो भीतर है वही बाहर है और जो बाहर है वो ही भीतर है ) <br></br> Vasthu principles integrated with architecture boost health, wealth, energy and prosperity and make the living or working atmosphere serene and enlighten.`
+    },
+    { name: "Tarot Card Reading", description: "Tarot is a divination tool which is used to get guidance and is commonly used to measure potential outcomes and evaluate influences surrounding a person or an event. It helps to give answers to our daily questions of life.<br></br>The best advice tarot can provide when someone with proper genuine intention ask for best suitable option from multiple options." },
     { name: "Hand Writing Analysing", description: "Handwriting analysis can reveal many useful personality traits. It involves Personal Development , self introspection,Compatibility Analysis etc, With the help of handwriting analysis , one can improve themself in all area and many more" },
     { name: "Match Making", description: "Kundli Matching or Guna Milan is the most integral aspect of every Hindu marriage. Hindu astrology lays strong emphasis on Janam Kundali Milan before a couple ties the knot. It is to check compatibility of two individuals in order to have an enchanted and successful marriage." },
-    { name: "Astrology", description: "Astrology can help us to understand the past , help to work on present and guide for better future. Besides helping in avoiding strains in marital relationships, business and professional matters, astrology also helps in enjoying good health, prosperity and spiritual advancement" }]
+    { name: "Astrology", description: "Astrology can help us to understand the past , help to work on present and guide for better future. Besides helping in avoiding strains in marital relationships, business and professional matters, astrology also helps in enjoying good health, prosperity and spiritual advancement<br></br>There is a myth about Astrology that it predicts a future. But Actually Astrology is a tool which share the possible events and help to walk towards better path. One can take a positive approach and indulge himself for indulge himself for better fruitful outcome towards future." }]
     function modalHandler(data) {
         $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
         $('.testimonial_modal_heading').html(data['name']);
@@ -34,7 +38,7 @@ export default function Services(props) {
     return (
         <div className='services_main' ref={props.refrs}>
             <div className='services_main_heading flex-col'> <h1>Services</h1>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                <p>We are offering below services. please select any service as per your requirement. We can ensure you to give you best suitable and fruitful  guidance.</p>
             </div>
 
             <div className='services_Offered flex-row'>
@@ -52,21 +56,25 @@ export default function Services(props) {
                     })
                 }
             </div>
-            <div class="modal fade" id="testimonial_modal" tabindex="-1" role="dialog" aria-labelledby="testimonial_modal" aria-hidden="true">
+            <div class="modal" id="testimonial_modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-dialog-centered m-auto" role="document">
-                    <div class="testimonial_modal_card">
-                        <div className='close'>
-                            <i class="fa-solid fa-circle-xmark float-right"></i>
-                        </div>
-                        <div class="service_hover_card_img">
-                            <img className='testimonial_modal_image' src="" alt="user-image" />
-                        </div>
-                        <div className='flex-col'>
-                            <h2 className='testimonial_modal_heading text-heading'></h2>
-                            <p className='testimonial_modal_description text-content'></p>
-
+                    <div class="modal-content" style={{ borderRadius: '20px', maxHeight: '500px' }}>
+                        <div class="testimonial_modal_card" style={{ borderRadius: '50px' }}>
+                            <div className='close' data-dismiss="modal">
+                                <i class="fa-solid fa-circle-xmark float-right"></i>
+                            </div>
+                            <div class="service_hover_card_img">
+                                <img className='testimonial_modal_image' src="" alt="user-image" />
+                            </div>
+                            <div className='flex-col'>
+                                <h2 className='testimonial_modal_heading text-heading'></h2>
+                                <p className='testimonial_modal_description text-content' style={{ fontWeight: '600' }}></p>
+                                <p className='text-content' style={{ fontWeight: '600' }}><br></br><br></br>To avail this service please fill the below form and we will get back to you</p>
+                                <button type='button' className='getquote' onClick={() => { window.open('https://forms.gle/P6wX9nUZBjd3QMDF9') }}>Get Quote</button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div >

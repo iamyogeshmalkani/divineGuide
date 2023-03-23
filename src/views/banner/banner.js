@@ -11,7 +11,7 @@ export default function Banner() {
                 <div className='flex-col'>
                     <fieldset>
                         <legend>Special Offer</legend>
-                        <legend>10% OFF</legend>
+                        <legend>UPTO 10% OFF</legend>
                     </fieldset>
                 </div>
             </div>

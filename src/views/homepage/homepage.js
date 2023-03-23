@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./homepage.css"
 import $ from "jquery";
 
@@ -17,49 +17,59 @@ function modalHandler(str) {
         services_html += `<div class="flex-row"><img src="icons/${service}.png"></img><p>${service}</p></div>`
     })
     $('.services_offered').html(services_html);
-    $('.services_homepage_image').attr('src', `icons/popups/${str}.png`)
+    $('.services_homepage_image').attr('src', `icons/navbar/${str}.png`)
 
 }
 const services_homepage = {
-    'Astrology': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
-    'Tarot Card Reading': ['Love and Relationship', 'Marriage', "Confusion Solution"],
-    'Match Making': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
-    'Hand Writing Analysing': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
-    'Vastu': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
+    'vastu': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
+    'tarot-card': ['Love and Relationship', 'Marriage', "Confusion Solution"],
+    'love-relationship': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
+    'writing-read': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
+    'astrology': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase']
 }
 function openModalOnHover(evt) {
-    $(`.${evt.target.className}`).click();
+    // $(`.${evt.target.className}`).click();
+    // $('.modal-backdrop').removeClass("modal-backdrop");
+    // $('body').removeClass('modal-open')
+}
+function closeModalOnLeave() {
+    $('close').click();
 }
 
 export default function Homepage(props) {
+    useEffect(() => {
+        setTimeout(() => {
+            $('.update_fire').addClass('shakeLeftRight');
+        }, 1000)
+    }, [])
     const [displayUpdates, setdisplayUpdates] = useState(false);
     return (
         <div className='homepage'>
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
                 <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
-                <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>yogeshmalkani28@gmail.com</div>
+                <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>officialastrologerDeepagupta@gmail.com</div>
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { var temp = displayUpdates; setdisplayUpdates(!temp) }}></img>
                 <div className='blogs_updates flex-col' style={{ display: displayUpdates ? 'flex' : 'none' }}>
                     <div className='flex-row align-items-center update'>
                         <img src='icons/fire-update.png' className='update_fire'></img>
-                        <p>New Astro Todays</p>
-                        <p>2 March 2023</p>
+                        <p className='update_title'>New Astro Todays djcvsc csdgvuscsvuysg</p>
+                        <p className='update_date'>2 March 2023</p>
                     </div>
                     <div className='flex-row align-items-center update'>
                         <img src='icons/fire-update.png' className='update_fire'></img>
-                        <p>New Astro Todays</p>
-                        <p>2 March 2023</p>
+                        <p className='update_title'>New Astro Todays</p>
+                        <p className='update_date'>2 March 2023</p>
                     </div>
                     <div className='flex-row align-items-center update'>
                         <img src='icons/fire-update.png' className='update_fire'></img>
-                        <p>New Astro Todays</p>
-                        <p>2 March 2023</p>
+                        <p className='update_title'>New Astro Todays</p>
+                        <p className='update_date'>2 March 2023</p>
                     </div>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Divine</a>
+                    <a class="navbar-brand" href="#">Astrologer Deepa Gupta</a>
                     <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>
                     </button>
@@ -75,7 +85,7 @@ export default function Homepage(props) {
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup>New</sup></a>
+                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
                             </li>
                         </ul>
                     </div>
@@ -84,11 +94,11 @@ export default function Homepage(props) {
             <div className='flex-row tagline_services'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='flex-col services_homepage'>
-                    <img src='icons/navbar/astro.png' className='service_astro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')} onMouseOver={(e) => openModalOnHover(e)}></img>
-                    <img src='icons/navbar/taro_card.png' className='service_taro' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')} onMouseOver={(e) => openModalOnHover(e)}></img>
-                    <img src='icons/navbar/l_and_r.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_l_r' onClick={() => modalHandler('Match Making')} onMouseOver={(e) => openModalOnHover(e)}></img>
-                    <img src='icons/navbar/hand_writing_reading.png' data-toggle="modal" data-target="#services_homepage_modal" className='service_writing_read' onClick={() => modalHandler('Hand Writing Analysing')} onMouseOver={(e) => openModalOnHover(e)}></img>
-                    <img src='icons/navbar/astro_2.png' className='service_astro2' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')} onMouseOver={(e) => openModalOnHover(e)}></img>
+                    <img src='icons/navbar/vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('vastu')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
+                    <img src='icons/navbar/tarot-card.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('tarot-card')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()} ></img>
+                    <img src='icons/navbar/love-relationship.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('love-relationship')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
+                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
+                    <img src='icons/navbar/astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astrology')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>
@@ -101,6 +111,9 @@ export default function Homepage(props) {
             <div class="modal fade" id="services_homepage_modal" tabindex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered m-auto" role="document">
                     <div class="services_hover_card">
+                        <div className='close' style={{ display: 'none' }}>
+                            <i class="fa-solid fa-circle-xmark float-right"></i>
+                        </div>
                         <div class="service_hover_card_img">
                             <img className='services_homepage_image' src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg" alt="user-image" />
                         </div>

@@ -1,5 +1,5 @@
 .services_main {
-    background-image: url('../../../public/icons/services/service-bg.jpg');
+    background-image: url('../../../public/icons/services/service-background.jpg');
     padding: 100px 50px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +71,7 @@
     text-align: center;
     margin: auto !important;
     height: fit-content;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: white;
 }
 
@@ -83,6 +83,25 @@
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+.testimonial_modal_heading {
+    font-weight: 600;
+    padding-bottom: 20px
+}
+
+.getquote {
+    width: fit-content;
+    margin: auto !important;
+    background-image: url('../../../public/icons/services/service-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px !important;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
 }
 
 @media (max-width: 900px) {

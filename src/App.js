@@ -6,8 +6,11 @@ import Services from './views/services/services';
 import AboutUs from './views/aboutUs/aboutUs';
 import Testimonial from './views/testimonials/testimonial';
 import Banner from './views/banner/banner';
-
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-XXXXX-X"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 const Blog = lazy(() => import("./views/blogs/blogs"));
+
 function App() {
   const aboutSection = useRef(null);
   const services = useRef(null);
