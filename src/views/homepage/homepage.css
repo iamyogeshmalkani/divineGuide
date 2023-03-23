@@ -326,19 +326,16 @@
 }
 
 @media (max-width: 768px) {
-    .mail_num {
-        justify-content: center !important;
+
+    .services_homepage img {
+        width: 170px;
+        height: 180px;
+        opacity: 0.8;
     }
 
     .service_l_r {
-        width: 200px !important;
-        height: 200px !important;
-    }
-
-    .services_homepage img {
-        width: 170px !important;
-        height: 180px !important;
-        opacity: 0.8;
+        width: 200px;
+        height: 200px;
     }
 
 

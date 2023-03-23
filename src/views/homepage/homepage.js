@@ -45,7 +45,7 @@ export default function Homepage(props) {
     const [displayUpdates, setdisplayUpdates] = useState(false);
     return (
         <div className='homepage'>
-            <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
+            <div class="container-fluid d-flex flex-row justify-content-between mail_num" style={{ gap: '10px' }}>
                 <div className='mail_and_num flex-row'>
                     <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
                     <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>officialastrologerDeepagupta@gmail.com</div>
