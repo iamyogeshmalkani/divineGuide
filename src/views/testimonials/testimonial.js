@@ -4,46 +4,30 @@ import "./testimonial.css"
 let test_html = ``;
 const testimonials = [
     {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    },
-    {
-        img: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`,
-        name: 'Yogesh Malkani'
-    }
+        img: 'https://i.pinimg.com/736x/2d/2a/2b/2d2a2ba069f852ecf04c9269416f919b.jpg',
+        description: `Talking to her is always a very satisfactory and calming experience :)`,
+        name: 'Soumya',
+        date: '22 March 2023'
 
+    },
+    {
+        img: 'https://i.pinimg.com/736x/2d/2a/2b/2d2a2ba069f852ecf04c9269416f919b.jpg',
+        description: `Her reading is quite good and does deep analysis before giving any prediction`,
+        name: 'Poonam',
+        date: '12 March 2023'
+    },
+    {
+        img: 'https://static.vecteezy.com/system/resources/previews/009/397/835/original/man-avatar-clipart-illustration-free-png.png',
+        description: `It was very much correct. I could relate the things she told me  Thanks Ma'am.`,
+        name: 'Akshay',
+        date: '22 March 2023'
+    },
+    {
+        img: 'https://static.vecteezy.com/system/resources/previews/009/397/835/original/man-avatar-clipart-illustration-free-png.png',
+        description: `Amazing ❤️ Accurate Predictions ❤️ Waiting for your predictions comes true madam❤️`,
+        name: 'Shibhu',
+        date: '16 Feb 2023'
+    },
 ]
 
 export default function Testimonial(props) {
@@ -97,6 +81,7 @@ export default function Testimonial(props) {
                                             </p>
                                         </div>
                                         <h5>${test['name']}</h5>
+                                        <p>${test['date']}</p>
                                 </div>
                                 </div>
                             </div>`;

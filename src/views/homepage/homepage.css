@@ -2,7 +2,7 @@
     background-color: rgb(22, 22, 85);
     height: max-content;
     padding: 30px 0px 0px 0px;
-    background-image: url('../../../public/icons/navbar/header-bg.jpg');
+    background-image: url('https://64.media.tumblr.com/d60fa89a6c6ef6b51790a079d7204540/f145147b69889cf3-a3/s400x600/bf0c72b48fe07d11954778cc4bd8277fde58a54c.gifv');
     image-rendering: -webkit-optimize-contrast;
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,5 +371,6 @@
 
     .mail_num {
         font-size: xx-small;
+        justify-content: space-between !important;
     }
 }
