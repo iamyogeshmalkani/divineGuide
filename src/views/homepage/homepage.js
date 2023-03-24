@@ -48,7 +48,7 @@ export default function Homepage(props) {
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
                 <div className='mail_and_num flex-row'>
                     <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
-                    <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i>officialastrologerDeepagupta@gmail.com</div>
+                    <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i><a href='mailto:officialastrologerDeepagupta@gmail.com'>officialastrologerDeepagupta@gmail.com</a></div>
                 </div>
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { var temp = displayUpdates; setdisplayUpdates(!temp) }}></img>
                 <div className='blogs_updates flex-col' style={{ display: displayUpdates ? 'flex' : 'none' }}>
@@ -87,7 +87,7 @@ export default function Homepage(props) {
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
+                                <a class="nav-link" href="#" onClick={() => { $('.blogs').show(900, 'swing'); $('.totop').hide(900) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
                             </li>
                         </ul>
                     </div>
@@ -99,7 +99,7 @@ export default function Homepage(props) {
                     <img src='icons/navbar/vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('vastu')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                     <img src='icons/navbar/tarot-card.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('tarot-card')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()} ></img>
                     <img src='icons/navbar/love-relationship.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('love-relationship')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
-                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>  */}
+                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                     <img src='icons/navbar/astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astrology')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                 </div>
             </div>

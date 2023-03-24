@@ -1,3 +1,28 @@
+.blogs {
+    position: fixed;
+    width: 40%;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    height: 100vh;
+    overflow-y: scroll;
+    display: none;
+    padding: 40px 0px 40px 0px;
+    border: 1px solid grey;
+}
+
+.blogs::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.closeBlogs {
+    margin-right: 10px !important;
+    position: fixed;
+    top: 1%;
+    right: 0;
+}
+
 .blogs>h1 {
     font-weight: 700;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -9,8 +34,8 @@
 }
 
 .blogs_heading {
-    width: 60%;
-    margin: auto !important;
+    width: 100%;
+    padding: 20px;
 }
 
 .blogs_heading h1 {
@@ -19,12 +44,17 @@
 }
 
 .blog_cards {
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .blog_card {
-    width: 60%;
+    width: 90%;
     margin: auto !important;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to right top, #140d3f, #1a0e43, #200f48, #26104c, #2c1050, #2f1156, #31135d, #341463, #32186e, #2d1c7a, #232186, #0f2692);
 }
 
 .blogs_card_head {
@@ -32,11 +62,13 @@
 }
 
 .head_img {
+    gap: 20px;
+}
+
+.head_img img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    gap: 20px;
-    background-color: #140d3f;
 }
 
 .header_info {
@@ -44,7 +76,8 @@
     padding: 20px;
 }
 
-.header_info h5 {
+.header_info h5,
+p {
     font-weight: 600 !important;
 
 }
@@ -53,12 +86,66 @@
     width: 100%;
 }
 
+.blog_content p {
+    white-space: break-spaces;
+    text-align: left;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.blog_content p::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
 @media (max-width: 900px) {
+    .blogs {
+        width: 70%;
+    }
+
     .blog_card {
         width: 90%;
     }
 
+
     .blogs_heading {
         width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .blogs {
+        padding: 30px 0px 10px 0px;
+    }
+
+    .blog_card {
+        padding: 10px;
+    }
+
+    .head_img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .header_info {
+        padding: 10px;
+    }
+
+    .header_info h5 {
+        font-size: 0.8rem;
+    }
+
+    .header_info p {
+        font-size: 0.7rem;
+    }
+
+    .blog_content p {
+        font-size: 0.8rem;
+    }
+
+    .closeBlogs {
+        margin: 0 !important;
     }
 }

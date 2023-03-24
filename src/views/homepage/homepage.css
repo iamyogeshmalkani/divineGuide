@@ -33,7 +33,7 @@
     }
 
     to {
-        top: 27%;
+        top: 32%;
         left: 0%;
 
     }
@@ -47,9 +47,8 @@
     }
 
     to {
-        left: 73%;
         top: 32%;
-
+        left: 73%;
     }
 
 }
@@ -74,7 +73,6 @@
 
 .homepage {
     background-color: rgb(22, 22, 85);
-    /* height: 1000px; */
     padding: 30px 0px 0px 0px;
     background-image: url('https://64.media.tumblr.com/d60fa89a6c6ef6b51790a079d7204540/f145147b69889cf3-a3/s400x600/bf0c72b48fe07d11954778cc4bd8277fde58a54c.gifv');
     image-rendering: -webkit-optimize-contrast;
@@ -168,6 +166,10 @@
     align-items: baseline;
     font-family: 'Montserrat Alternates', sans-serif;
 
+}
+
+.num a {
+    color: white;
 }
 
 .mail_and_num {
@@ -280,12 +282,10 @@
 
 .service_l_r {
     position: absolute;
-    width: 300px !important;
-    height: 300px !important;
     animation: example2;
     animation-duration: 3s;
     animation-delay: 0s;
-    top: 27%;
+    top: 32%;
     left: 0%;
 }
 
@@ -432,12 +432,6 @@
         width: 170px;
         height: 180px;
     }
-
-    .service_l_r {
-        width: 200px;
-        height: 200px;
-    }
-
 }
 
 @media (max-width: 490px) {
@@ -453,11 +447,6 @@
     .services_homepage img {
         width: 100px !important;
         height: 100px !important;
-    }
-
-    .service_l_r {
-        width: 200px !important;
-        height: 200px !important;
     }
 
     .mail_and_num {
