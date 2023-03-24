@@ -93,13 +93,13 @@ export default function Homepage(props) {
                     </div>
                 </div>
             </nav >
-            <div className='flex-row tagline_services'>
+            <div className='flex-row tagline_services justify-content-between'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
-                <div className='flex-col services_homepage'>
+                <div className='services_homepage'>
                     <img src='icons/navbar/vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('vastu')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                     <img src='icons/navbar/tarot-card.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('tarot-card')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()} ></img>
                     <img src='icons/navbar/love-relationship.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('love-relationship')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
-                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
+                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>  */}
                     <img src='icons/navbar/astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astrology')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
                 </div>
             </div>
