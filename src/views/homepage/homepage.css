@@ -128,7 +128,7 @@
     height: fit-content;
     width: 250px;
     background-color: #020d3e;
-    opacity: 0.8;
+    opacity: 1;
     padding: 10px;
     border-radius: 20px;
     position: absolute;
@@ -250,10 +250,14 @@
 }
 
 .services_homepage img {
-    opacity: 0.8;
+    opacity: 0.6;
     cursor: pointer;
     width: 200px;
     height: 200px;
+}
+
+.services_homepage img:hover {
+    opacity: 1;
 }
 
 .service_vastu {
@@ -355,7 +359,6 @@
 }
 
 #services_homepage_modal .modal-dialog {
-    /* opacity: 0.5; */
     border-radius: 20px;
 }
 
@@ -450,7 +453,6 @@
     .services_homepage img {
         width: 100px !important;
         height: 100px !important;
-        opacity: 0.8;
     }
 
     .service_l_r {
