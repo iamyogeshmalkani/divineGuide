@@ -393,6 +393,7 @@
     }
 
     .services_homepage {
+        height: fit-content;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 50px;
@@ -400,8 +401,8 @@
     }
 
     .services_homepage img {
-        opacity: 0.8;
         position: relative;
+        animation: none;
         left: 0;
         top: 0;
     }
@@ -418,20 +419,21 @@
 }
 
 @media (max-width: 768px) {
+    .services_homepage {
+        height: fit-content;
+    }
 
     .services_homepage img {
+        position: relative;
+        animation: none;
         width: 170px;
         height: 180px;
-        opacity: 0.8;
     }
 
     .service_l_r {
         width: 200px;
         height: 200px;
     }
-
-
-
 
 }
 
