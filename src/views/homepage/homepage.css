@@ -1,3 +1,75 @@
+@keyframes example {
+    0% {
+        background-color: transparent;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: transparent;
+        /* left: 25%; */
+    }
+
+}
+
+@keyframes example1 {
+    0% {
+        background-color: transparent;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+
+}
+
+@keyframes example2 {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: transparent;
+
+    }
+
+}
+
+@keyframes example3 {
+    0% {
+        background-color: transparent;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: transparent;
+        /* left: 75%; */
+    }
+
+}
+
+@keyframes example4 {
+    0% {
+        background-color: transparent;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: transparent;
+        /* left: 75%; */
+    }
+
+}
+
+
+
+
 .homepage {
     background-color: rgb(22, 22, 85);
     height: max-content;
@@ -181,33 +253,49 @@
 }
 
 .service_vastu {
-    position: absolute;
+    position: relative;
     left: 25%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 .service_tarot {
     position: relative;
     left: 70%;
+    top: -18%;
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 .service_l_r {
     position: relative;
     width: 300px !important;
     height: 300px !important;
-    top: -5%;
+    animation: example2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    top: -20%;
     left: 5%;
 }
 
 .service_writing_read {
     position: relative;
+    animation: example3;
+    animation-duration: 2s;
+    animation-delay: 1s;
     left: 80%;
-    top: -33%;
+    top: -42%;
     right: 10%;
 }
 
 .service_astrology {
     position: relative;
-    top: -35%;
+    animation: example4;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    top: -42%;
     left: 45%;
 }
 

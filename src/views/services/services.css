@@ -108,4 +108,9 @@
     .services_main_heading {
         width: 100%;
     }
+
+    .services_main {
+        padding: 50px 20px;
+
+    }
 }

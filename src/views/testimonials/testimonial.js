@@ -5,14 +5,15 @@ let test_html = ``;
 const testimonials = [
     {
         img: 'https://i.pinimg.com/736x/2d/2a/2b/2d2a2ba069f852ecf04c9269416f919b.jpg',
-        description: `Talking to her is always a very satisfactory and calming experience :)`,
+        description: `Talking to her is always a very satisfactory and calming experience :)
+        `,
         name: 'Soumya',
         date: '22 March 2023'
 
     },
     {
         img: 'https://i.pinimg.com/736x/2d/2a/2b/2d2a2ba069f852ecf04c9269416f919b.jpg',
-        description: `Her reading is quite good and does deep analysis before giving any prediction`,
+        description: `Her reading is quite good and does deep analysis before giving any prediction.`,
         name: 'Poonam',
         date: '12 March 2023'
     },
@@ -24,7 +25,7 @@ const testimonials = [
     },
     {
         img: 'https://static.vecteezy.com/system/resources/previews/009/397/835/original/man-avatar-clipart-illustration-free-png.png',
-        description: `Amazing ❤️ Accurate Predictions ❤️ Waiting for your predictions comes true madam❤️`,
+        description: `Amazing ❤️ Accurate Predictions ❤️ Waiting for your predictions comes true madam❤️.`,
         name: 'Shibhu',
         date: '16 Feb 2023'
     },

@@ -48,14 +48,14 @@
 
 @media (max-width: 950px) {
     .aboutus_desc {
-        text-align: left;
+        text-align: center;
 
     }
 
     .aboutus {
         flex-direction: column !important;
         align-items: left;
-        padding: 150px 20px !important;
+        padding: 50px 10px !important;
     }
 
     .aboutusInfo {
