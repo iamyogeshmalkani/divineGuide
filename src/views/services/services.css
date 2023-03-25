@@ -104,6 +104,10 @@
     padding: 5px 10px;
 }
 
+.modal-content {
+    margin-bottom: 10% !important;
+}
+
 @media (max-width: 900px) {
     .services_main_heading {
         width: 100%;

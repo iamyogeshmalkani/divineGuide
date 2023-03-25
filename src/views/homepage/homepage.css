@@ -1,40 +1,40 @@
 @keyframes example {
     from {
-        top: 40%;
+        top: 21%;
         left: 40%;
 
     }
 
     to {
-        top: 0%;
-        left: 20%;
+        top: -10%;
+        left: 22%;
     }
 
 }
 
 @keyframes example1 {
     from {
-        top: 40%;
+        top: 21%;
         left: 40%;
 
     }
 
     to {
-        top: 0%;
-        left: 60%;
+        top: -10%;
+        left: 58%;
     }
 
 }
 
 @keyframes example2 {
     from {
-        top: 40%;
+        top: 21%;
         left: 40%;
     }
 
     to {
-        top: 32%;
-        left: 0%;
+        top: 24%;
+        left: 5%;
 
     }
 
@@ -42,13 +42,13 @@
 
 @keyframes example3 {
     from {
-        top: 40%;
+        top: 21%;
         left: 40%;
     }
 
     to {
-        top: 32%;
-        left: 73%;
+        left: 68%;
+        top: 21%;
     }
 
 }
@@ -56,13 +56,13 @@
 @keyframes example4 {
 
     from {
-        top: 40%;
+        top: 21%;
         left: 40%;
     }
 
     to {
-        top: 57%;
-        left: 41%;
+        top: 52%;
+        left: 39%;
 
     }
 
@@ -228,6 +228,11 @@
     position: relative;
 }
 
+.navbar-collapse ul {
+    height: 20vh;
+}
+
+
 .tagLine {
     margin: 0;
     margin: 200px 0px 0px 10px !important;
@@ -264,8 +269,8 @@
 
 .service_vastu {
     position: absolute;
-    top: 0%;
-    left: 20%;
+    top: -10%;
+    left: 22%;
     animation-name: example;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -273,8 +278,8 @@
 
 .service_tarot {
     position: absolute;
-    top: 0%;
-    left: 60%;
+    top: -10%;
+    left: 58%;
     animation-name: example1;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -285,8 +290,8 @@
     animation: example2;
     animation-duration: 3s;
     animation-delay: 0s;
-    top: 32%;
-    left: 0%;
+    top: 24%;
+    left: 5%;
 }
 
 .service_writing_read {
@@ -294,8 +299,8 @@
     animation: example3;
     animation-duration: 3s;
     animation-delay: 0s;
-    left: 73%;
-    top: 32%;
+    left: 68%;
+    top: 21%;
 }
 
 .service_astrology {
@@ -303,8 +308,18 @@
     animation: example4;
     animation-duration: 3s;
     animation-delay: 0s;
-    top: 57%;
-    left: 41%;
+    top: 52%;
+    left: 39%;
+}
+
+.center_image {
+    position: absolute;
+    top: 21%;
+    left: 38%;
+    opacity: 1 !important;
+    border-radius: 50%;
+    cursor: context-menu !important;
+
 }
 
 .social_medias {
@@ -386,6 +401,10 @@
 }
 
 @media (max-width: 900px) {
+    .center_image {
+        display: none;
+    }
+
     .homepage {
         padding-bottom: 20px;
     }

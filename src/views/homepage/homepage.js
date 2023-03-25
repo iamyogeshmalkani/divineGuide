@@ -87,7 +87,7 @@ export default function Homepage(props) {
                                 <a class="nav-link" href="#" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" onClick={() => { $('.blogs').show(900, 'swing'); $('.totop').hide(900) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
+                                <a class="nav-link" href="#" onClick={() => { $('.blogs').show(500); $('.totop').hide(500) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
                             </li>
                         </ul>
                     </div>
@@ -96,11 +96,12 @@ export default function Homepage(props) {
             <div className='flex-row tagline_services justify-content-between'>
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='services_homepage'>
-                    <img src='icons/navbar/vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('vastu')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
-                    <img src='icons/navbar/tarot-card.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('tarot-card')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()} ></img>
-                    <img src='icons/navbar/love-relationship.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('love-relationship')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
-                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
-                    <img src='icons/navbar/astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astrology')} onMouseOver={(e) => openModalOnHover(e)} onMouseLeave={() => closeModalOnLeave()}></img>
+                    <img src='icons/navbar/vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('vastu')} ></img>
+                    <img src='icons/navbar/tarot-card.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('tarot-card')} ></img>
+                    <img src='https://media1.giphy.com/media/WmtnVfTNbDigG32A8u/giphy.gif' className='center_image'></img>
+                    <img src='icons/navbar/love-relationship.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('love-relationship')}></img>
+                    <img src='icons/navbar/writing-read.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('writing-read')}></img>
+                    <img src='icons/navbar/astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('astrology')}></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>
