@@ -6,6 +6,7 @@ import Services from './views/services/services';
 import AboutUs from './views/aboutUs/aboutUs';
 import Testimonial from './views/testimonials/testimonial';
 import Banner from './views/banner/banner';
+import Sidebar from './views/sidebar';
 import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-XXXXX-X"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -28,6 +29,7 @@ function App() {
       <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
         <img src='icons/arrow-up.svg'></img>
       </button>
+      <Sidebar />
       <Banner />
       <Homepage refrs={refrs} />
       <AboutUs refrs={aboutSection} />

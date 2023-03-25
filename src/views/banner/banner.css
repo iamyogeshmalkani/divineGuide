@@ -24,8 +24,16 @@ fieldset legend {
 .banner>img {
     width: 90px;
     height: 90px;
-    position: relative;
-    top: 20px;
+    position: absolute;
+    bottom: -40px;
+}
+
+.banner_leftimg {
+    left: 10%;
+}
+
+.banner_rightimg {
+    right: 10%;
 }
 
 .banner>div {
@@ -45,6 +53,7 @@ fieldset legend {
     border: 1px solid white;
     padding: 5px;
 }
+
 
 @media (max-width: 1300px) {
     .banner>div {

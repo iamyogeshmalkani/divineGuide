@@ -44,9 +44,6 @@ export default function Blog(props) {
     // }
     return (
         <div className='blogs' ref={props.refrs}>
-            <button className=' close btn closeBlogs' onClick={() => { $('.blogs').hide(500); $('.totop').show() }}>
-                <i class="fa-solid fa-circle-xmark float-right"></i>
-            </button>
             <div className='blogs_heading'>
                 <h1 className='text-heading'>Blogs</h1>
             </div>

@@ -4,6 +4,10 @@
     box-shadow: none;
 }
 
+.arrows {
+    height: 100px;
+}
+
 .testimonials_arrow {
     width: 150px;
     height: 150px;
@@ -48,7 +52,7 @@
 .card_info {
     padding: 10px 25px;
     color: white;
-    max-height: 300px;
+    height: 300px;
 }
 
 

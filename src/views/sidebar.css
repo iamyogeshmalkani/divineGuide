@@ -1,0 +1,46 @@
+#blogs_updates {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#blogs_updates .closebtn {
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#blogs_updates .update {
+    /* margin: auto !important; */
+    width: 90%;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #0f2692;
+    color: white;
+    justify-content: space-between;
+}
+
+.update_title {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.update_date {
+    font-size: 0.5rem;
+    width: 20%;
+    font-weight: 600;
+}

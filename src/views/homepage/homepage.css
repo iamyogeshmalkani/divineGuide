@@ -72,9 +72,8 @@
 
 
 .homepage {
-    background-color: rgb(22, 22, 85);
+    background-image: url('../../../public/icons/navbar/header-bg.jpg');
     padding: 30px 0px 0px 0px;
-    background-image: url('https://64.media.tumblr.com/d60fa89a6c6ef6b51790a079d7204540/f145147b69889cf3-a3/s400x600/bf0c72b48fe07d11954778cc4bd8277fde58a54c.gifv');
     image-rendering: -webkit-optimize-contrast;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,39 +121,6 @@
     }
 }
 
-.blogs_updates {
-    height: fit-content;
-    width: 250px;
-    background-color: #020d3e;
-    opacity: 1;
-    padding: 10px;
-    border-radius: 20px;
-    position: absolute;
-    top: 22%;
-    right: 1%;
-    z-index: 100;
-    gap: 10px;
-}
-
-
-.blogs_updates .update {
-    border-radius: 10px;
-    padding: 2px;
-    background-color: #1938c1;
-    color: white;
-    justify-content: space-between;
-}
-
-.update_title {
-    font-size: 0.7rem;
-    font-weight: 600;
-}
-
-.update_date {
-    font-size: 0.5rem;
-    width: 20%;
-    font-weight: 600;
-}
 
 .mail_num .mail,
 .num {
@@ -314,7 +280,9 @@
 
 .center_image {
     position: absolute;
-    top: 21%;
+    width: 250px !important;
+    height: 250px !important;
+    top: 15%;
     left: 38%;
     opacity: 1 !important;
     border-radius: 50%;
