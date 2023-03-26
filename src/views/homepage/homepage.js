@@ -60,7 +60,7 @@ export default function Homepage(props) {
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { openNav() }}></img>
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
-                <div class="container-fluid">
+                <div class="container-fluid align-baseline">
                     <a class="navbar-brand" href="#">Astrologer Deepa Gupta</a>
                     <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>

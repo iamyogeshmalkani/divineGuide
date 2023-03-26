@@ -107,8 +107,6 @@ export default function Testimonial(props) {
                         <div class="col-12">
                             <h3 class="mb-3 text-heading testimonial_heading">Testimonial</h3>
                             <p className='text-content'>Its an honour for us to share views of our happy ,  satisfied, repeated customer. We are 100% successful for providing them best suitable and fruitful guidance.<i class="fa-solid fa-ditto"></i></p>
-                        </div>
-                        <div class="col-12 d-flex w-100 arrows">
                             <button class="btn bg-transparent prev w-100" href="#carouselExampleIndicators2" role="button" data-slide="prev" onClick={() => { checkitem(false) }}>
                                 <img className='testimonials_arrow' src='icons/arrow-left.png'></img>
                             </button>
