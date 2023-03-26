@@ -9,7 +9,7 @@ export default function Sidebar() {
 
     return (
         <div id='blogs_updates' className='flex-col'>
-            <h2 className='text-heading' style={{ fontWeight: '600' }}>Updates</h2>            <a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>
+            <h2 style={{ fontWeight: '600' }}>Updates</h2>            <a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>
             <div className='flex-row align-items-center update'>
                 <img src='icons/fire-update.png' className='update_fire'></img>
                 <p className='update_title'>New Astro Todays djcvsc csdgvuscsvuysg</p>
