@@ -33,7 +33,6 @@ const testimonials = [
 
 export default function Testimonial(props) {
 
-
     function checkitem(str) {
         setTimeout(() => {
             if ($('.item-1').hasClass('active')) {

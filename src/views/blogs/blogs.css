@@ -46,12 +46,14 @@
 
 .head_img {
     gap: 20px;
+
 }
 
 .head_img img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .header_info {
@@ -76,13 +78,14 @@ p {
 .blog_content p {
     white-space: break-spaces;
     text-align: left;
-    overflow-y: scroll;
-    height: 400px;
     font-weight: 400 !important;
+    height: fit-content;
 }
 
-.blog_content p::-webkit-scrollbar {
-    display: none;
+.read-or-hide {
+    color: grey;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 @media (max-width: 900px) {

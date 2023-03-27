@@ -7,7 +7,7 @@
 
     to {
         top: -10%;
-        left: 22%;
+        left: 58%;
     }
 
 }
@@ -21,19 +21,19 @@
 
     to {
         top: -10%;
-        left: 58%;
+        left: 22%;
     }
 
 }
 
 @keyframes example2 {
     from {
-        top: 21%;
+        top: 20%;
         left: 40%;
     }
 
     to {
-        top: 24%;
+        top: 22%;
         left: 8%;
 
     }
@@ -42,13 +42,13 @@
 
 @keyframes example3 {
     from {
-        top: 21%;
+        top: 20%;
         left: 40%;
     }
 
     to {
+        top: 22%;
         left: 72%;
-        top: 21%;
     }
 
 }
@@ -56,14 +56,13 @@
 @keyframes example4 {
 
     from {
-        top: 21%;
+        top: 20%;
         left: 40%;
     }
 
     to {
         top: 52%;
-        left: 39%;
-
+        left: 41%;
     }
 
 }
@@ -259,7 +258,7 @@
 .service_vastu {
     position: absolute;
     top: -10%;
-    left: 22%;
+    left: 58%;
     animation-name: example;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -268,7 +267,7 @@
 .service_tarot {
     position: absolute;
     top: -10%;
-    left: 58%;
+    left: 22%;
     animation-name: example1;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -279,7 +278,7 @@
     animation: example2;
     animation-duration: 3s;
     animation-delay: 0s;
-    top: 24%;
+    top: 22%;
     left: 8%;
 }
 
@@ -288,25 +287,27 @@
     animation: example3;
     animation-duration: 3s;
     animation-delay: 0s;
+    top: 22%;
     left: 72%;
-    top: 21%;
 }
 
 .service_astrology {
+    width: 250px !important;
+    height: 250px !important;
     position: absolute;
-    animation: example4;
-    animation-duration: 3s;
-    animation-delay: 0s;
-    top: 52%;
-    left: 39%;
+    top: 18%;
+    left: 36%;
 }
 
 .service_prasana_kundali {
     position: absolute;
+    animation: example4;
+    animation-duration: 3s;
+    animation-delay: 0s;
     width: 200px !important;
     height: 200px !important;
-    top: 20%;
-    left: 40%;
+    top: 52%;
+    left: 41%;
 }
 
 .social_medias {
