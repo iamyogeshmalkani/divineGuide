@@ -29,11 +29,16 @@ export default function Services(props) {
     { name: "Tarot Card Reading", description: "Tarot is a divination tool which is used to get guidance and is commonly used to measure potential outcomes and evaluate influences surrounding a person or an event. It helps to give answers to our daily questions of life.<br></br>The best advice tarot can provide when someone with proper genuine intention ask for best suitable option from multiple options." },
     { name: "Hand Writing Analysing", description: "Handwriting analysis can reveal many useful personality traits. It involves Personal Development , self introspection,Compatibility Analysis etc, With the help of handwriting analysis , one can improve themself in all area and many more" },
     { name: "Match Making", description: "Kundli Matching or Guna Milan is the most integral aspect of every Hindu marriage. Hindu astrology lays strong emphasis on Janam Kundali Milan before a couple ties the knot. It is to check compatibility of two individuals in order to have an enchanted and successful marriage." },
-    { name: "Astrology", description: "Astrology can help us to understand the past , help to work on present and guide for better future. Besides helping in avoiding strains in marital relationships, business and professional matters, astrology also helps in enjoying good health, prosperity and spiritual advancement<br></br>There is a myth about Astrology that it predicts a future. But Actually Astrology is a tool which share the possible events and help to walk towards better path. One can take a positive approach and indulge himself for indulge himself for better fruitful outcome towards future." }]
-    function modalHandler(data) {
-        $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
-        $('.testimonial_modal_heading').html(data['name']);
-        $('.testimonial_modal_description').html(data['description']);
+    { name: "Astrology", description: "Astrology can help us to understand the past , help to work on present and guide for better future. Besides helping in avoiding strains in marital relationships, business and professional matters, astrology also helps in enjoying good health, prosperity and spiritual advancement<br></br>There is a myth about Astrology that it predicts a future. But Actually Astrology is a tool which share the possible events and help to walk towards better path. One can take a positive approach and indulge himself for indulge himself for better fruitful outcome towards future." },
+    {
+        name: "Prasana Kundali", description: "Prashna Kundali Astrology is the best way to know about future predictions even in the condition when a person doesn’t know about their Birth Time. Generally getting a proper answer without Birth Detail gets quite complex, but Prashna Kundali is the Astrology Science that gives you an exact answer about your queries related to your future. Prashna Kundali is a time-based kundali made on the basis of the time when the question was asked by someone. A combination of Prashna Kundali and Birth Kundali can easily solve any problem."
+    }]
+    function serviceModalHandler(data) {
+        if (data) {
+            $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
+            $('.testimonial_modal_heading').html(data['name']);
+            $('.testimonial_modal_description').html(data['description']);
+        }
     }
     return (
         <div className='services_main' ref={props.refrs}>
@@ -44,13 +49,13 @@ export default function Services(props) {
             <div className='services_Offered flex-row'>
                 {
                     data.map((d) => {
-                        return (<div class="card service_card" data-toggle="modal" data-target="#testimonial_modal" onClick={() => modalHandler(d)} >
+                        return (<div class="card service_card" data-toggle="modal" data-target="#testimonial_modal" onClick={() => serviceModalHandler(d)} >
                             <img src={`icons/services/${d['name']}.jpg`} class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">{d['name']}</h5>
                                 <div className='card_title mb-2'></div>
                                 <p class="card-text text-content  services_desc">{d['description']}</p>
-                                <a class='readmore' style={{ visibility: 'hidden' }} onClick={() => modalHandler(d)}>Read More</a>
+                                <a class='readmore' style={{ visibility: 'hidden' }} onClick={() => serviceModalHandler(d)}>Read More</a>
                             </div>
                         </div>)
                     })

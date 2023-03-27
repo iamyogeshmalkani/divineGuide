@@ -4,13 +4,9 @@
     box-shadow: none;
 }
 
-.arrows {
-    height: 100px;
-}
-
 .testimonials_arrow {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
 }
 
 .testimonials_cards_row .prev {
