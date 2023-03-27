@@ -89,7 +89,7 @@ export default function Homepage(props) {
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Astrologer Deepa Gupta</a>
+                    <a class="navbar-brand" href="#"><img src='icons/brand/Logo.png'></img>Astrologer Deepa Gupta</a>
                     <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>
                     </button>
@@ -125,10 +125,10 @@ export default function Homepage(props) {
                 </div>
             </div>
             <div className='social_medias flex-row'>
-                <a href='facebook.com'><i class="fa-brands fa-facebook"></i></a>
-                <a href='whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
+                <a href='https://www.facebook.com/deepagupta09?mibextid=ZbWKwL' target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                {/* <a href='whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
                 <a href='youtube.com'><i class="fa-brands fa-youtube"></i></a>
-                <a href='instagram.com'><i class="fa-brands fa-instagram"></i></a>
+                <a href='instagram.com'><i class="fa-brands fa-instagram"></i></a> */}
 
             </div>
             <div class="modal fade" id="services_homepage_modal" tabindex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">

@@ -1,6 +1,7 @@
 import './App.css';
 import { useRef } from 'react';
 import { Suspense, lazy } from 'react';
+import Homepage from "./views/homepage/homepage"
 import Services from './views/services/services';
 import AboutUs from './views/aboutUs/aboutUs';
 import Testimonial from './views/testimonials/testimonial';
@@ -10,7 +11,6 @@ import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-XXXXX-X"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 const Blog = lazy(() => import("./views/blogs/blogs"));
-const Homepage = lazy(() => import("./views/homepage/homepage"));
 
 
 function App() {
@@ -32,9 +32,7 @@ function App() {
       </button>
       <Sidebar />
       <Banner />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Homepage refrs={refrs} />
-      </Suspense>
+      <Homepage refrs={refrs} />
       <AboutUs refrs={aboutSection} />
       <Services refrs={services} />
       <Testimonial refrs={testimonials} />

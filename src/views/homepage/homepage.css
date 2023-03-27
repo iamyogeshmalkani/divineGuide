@@ -89,6 +89,11 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
 .update_fire {
     width: 30px;
     height: 30px;
@@ -449,6 +454,11 @@
 }
 
 @media (max-width: 490px) {
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+
     .navbar-brand {
         font-size: 1rem;
     }
