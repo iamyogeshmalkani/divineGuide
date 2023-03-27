@@ -24,7 +24,7 @@ export default function Blog(props) {
         img: 'kitchen',
         creator: 'Deepa Gupta',
         avatar: 'about-us',
-        date: '3:40 27-03-2023'
+        date: '03:40 27-03-2023'
     },
     {
         img: `Award`,

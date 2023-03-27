@@ -54,7 +54,6 @@ export default function Homepage(props) {
         document.getElementById("blogs_updates").style.width = "250px";
         document.getElementById("sidebar").style.width = "100%";
         document.getElementById('sidebar_show').style.width = "calc(100vw - 250px)"
-
     }
     useEffect(() => {
         setTimeout(() => {
@@ -75,6 +74,9 @@ export default function Homepage(props) {
         $('.testimonial_modal_image').attr('src', `icons/popups/${data['name']}.png`);
         $('.testimonial_modal_heading').html(data['name']);
         $('.testimonial_modal_description').html(data['description']);
+        setTimeout(() => {
+            $('body').addClass('modal-open');
+        }, 1000)
     }
     const [displayUpdates, setdisplayUpdates] = useState(false);
     return (
@@ -89,7 +91,7 @@ export default function Homepage(props) {
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src='icons/brand/Logo.png'></img>Astrologer Deepa Gupta</a>
+                    <a class="navbar-brand" href="#"><img src='icons/brand/Logo.png'></img></a>
                     <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>
                     </button>
@@ -125,10 +127,10 @@ export default function Homepage(props) {
                 </div>
             </div>
             <div className='social_medias flex-row'>
-                <a href='https://www.facebook.com/deepagupta09?mibextid=ZbWKwL' target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                {/* <a href='whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
-                <a href='youtube.com'><i class="fa-brands fa-youtube"></i></a>
-                <a href='instagram.com'><i class="fa-brands fa-instagram"></i></a> */}
+                <a href='https://www.facebook.com/deepagupta09?mibextid=ZbWKw' target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href='https://whatsapp.com' target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href='https://youtube.com' target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href='https://instagram.com' target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
             </div>
             <div class="modal fade" id="services_homepage_modal" tabindex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">

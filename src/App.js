@@ -30,7 +30,7 @@ function App() {
       <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
         <img src='icons/arrow-up.svg'></img>
       </button>
-      <Sidebar />
+      <Sidebar refrs={refrs} />
       <Banner />
       <Homepage refrs={refrs} />
       <AboutUs refrs={aboutSection} />
