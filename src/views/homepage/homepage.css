@@ -1,7 +1,7 @@
 @keyframes example {
     from {
         top: 21%;
-        left: 40%;
+        left: 39%;
 
     }
 
@@ -62,13 +62,10 @@
 
     to {
         top: 52%;
-        left: 41%;
+        left: 40%;
     }
 
 }
-
-
-
 
 .homepage {
     background-image: url('../../../public/images/service_bg3.jpg');
@@ -133,6 +130,10 @@
     margin-top: 20px !important;
 }
 
+.mail_num a {
+    color: white;
+}
+
 .mail_num .mail,
 .num {
     padding: 5px;
@@ -145,9 +146,7 @@
 
 }
 
-.num a {
-    color: white;
-}
+
 
 .mail_and_num {
     gap: 10px;
@@ -307,7 +306,7 @@
     width: 200px !important;
     height: 200px !important;
     top: 52%;
-    left: 41%;
+    left: 39%;
 }
 
 .social_medias {
@@ -385,8 +384,8 @@
 }
 
 .services_offered img {
-    width: 20px;
     height: 20px;
+    width: auto;
 }
 
 @media(max-width: 1000px) {

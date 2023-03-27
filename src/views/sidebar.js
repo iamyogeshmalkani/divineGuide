@@ -7,17 +7,17 @@ export default function Sidebar() {
         document.getElementById("blogs_updates").style.width = "0";
         document.getElementById("root").style.marginLeft = "0";
         document.getElementById("sidebar").style.width = "0";
+        document.getElementById("sidebar_show").style.width = "0";
     }
     useEffect(() => {
-        $('.sidebar_show').click(() => {
+        $('#sidebar_show').click(() => {
             closeNav();
         })
 
     })
     return (
         <div id='sidebar'>
-            <div className='sidebar_show'>
-
+            <div id='sidebar_show'>
             </div>
             <div id='blogs_updates' className='flex-col'>
                 <h2 style={{ fontWeight: '600' }}>Updates</h2><a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>

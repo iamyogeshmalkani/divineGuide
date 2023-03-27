@@ -53,6 +53,7 @@ export default function Homepage(props) {
         console.log('caaled');
         document.getElementById("blogs_updates").style.width = "250px";
         document.getElementById("sidebar").style.width = "100%";
+        document.getElementById('sidebar_show').style.width = "calc(100vw - 250px)"
 
     }
     useEffect(() => {
@@ -81,8 +82,8 @@ export default function Homepage(props) {
             {/* <img src='images/service_bg1.webp' className='position-absolute homepage_bg'></img> */}
             <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
                 <div className='mail_and_num flex-row'>
-                    <div className='flex-row mail'><i class="fa-solid fa-phone" style={{ color: "white" }}></i>+91-8860417666</div>
-                    <div className='flex-row num'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i><a href='mailto:officialastrologerDeepagupta@gmail.com'>officialastrologerDeepagupta@gmail.com</a></div>
+                    <div className='flex-row num'><i class="fa-solid fa-phone" style={{ color: "white" }}></i><a href="tel:+918130025582">+91-8130025582</a></div>
+                    <div className='flex-row mail'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i><a href='mailto:officialastrologerDeepagupta@gmail.com'>officialastrologerDeepagupta@gmail.com</a></div>
                 </div>
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { openNav() }}></img>
             </div>

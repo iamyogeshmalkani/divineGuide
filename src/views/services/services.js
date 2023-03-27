@@ -4,6 +4,16 @@ import $ from "jquery"
 
 
 export default function Services(props) {
+
+    function openForm() {
+        var str = $('.testimonial_modal_heading').html();
+        if (str == 'Match Making') {
+            window.open('https://forms.gle/iuxUkHVx5FsHTvFR7');
+        }
+        else {
+            window.open('https://forms.gle/P6wX9nUZBjd3QMDF9');
+        }
+    }
     useEffect(() => {
         var elements = document.querySelectorAll('.services_desc');
         elements.forEach(element => {
@@ -75,7 +85,7 @@ export default function Services(props) {
                                 <h2 className='testimonial_modal_heading text-heading'></h2>
                                 <p className='testimonial_modal_description text-content' style={{ fontWeight: '600' }}></p>
                                 <p className='text-content' style={{ fontWeight: '600' }}><br></br><br></br>To avail this service please fill the below form and we will get back to you</p>
-                                <button type='button' className='getquote' onClick={() => { window.open('https://forms.gle/P6wX9nUZBjd3QMDF9') }}>Get Quote</button>
+                                <button type='button' className='getquote' onClick={() => { openForm() }}>Get Quote</button>
                             </div>
                         </div>
                     </div>
