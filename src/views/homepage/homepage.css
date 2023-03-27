@@ -72,11 +72,19 @@
 
 
 .homepage {
-    background-image: url('../../../public/icons/navbar/header-bg.jpg');
+    background-image: url('../../../public/images/service_bg3.jpg');
     padding: 30px 0px 0px 0px;
     image-rendering: -webkit-optimize-contrast;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homepage_bg {
+    width: 100%;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    opacity: 0.8;
 }
 
 .navbar-brand {
@@ -164,8 +172,7 @@
     font-size: medium;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: 'Montserrat regular', sans-serif;
-
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .nav-link sup img {
@@ -217,12 +224,25 @@
 }
 
 .services_homepage {
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     width: 60%;
     margin-top: 50px !important;
     gap: 30px;
     height: 800px;
 
+}
+
+.service_bg {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 90% !important;
+    opacity: 0.5;
+    height: 100%;
+    height: auto !important;
+    border-radius: 50%;
 }
 
 .services_homepage img {
@@ -281,16 +301,12 @@
     left: 39%;
 }
 
-.center_image {
+.service_prasana_kundali {
     position: absolute;
     width: 200px !important;
     height: 200px !important;
-    top: 22%;
+    top: 20%;
     left: 40%;
-    opacity: 1 !important;
-    border-radius: 50%;
-    cursor: context-menu !important;
-
 }
 
 .social_medias {
@@ -311,6 +327,7 @@
 }
 
 .services_hover_card {
+    cursor: pointer;
     border-radius: 10px;
     width: 250px;
     text-align: center;

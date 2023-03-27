@@ -25,7 +25,7 @@ function App() {
     });
   };
   return (
-    <div className="App">
+    <div className="App position-relative">
       <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
         <img src='icons/arrow-up.svg'></img>
       </button>
@@ -35,6 +35,7 @@ function App() {
       <AboutUs refrs={aboutSection} />
       <Services refrs={services} />
       <Testimonial refrs={testimonials} />
+      <hr class="solid"></hr>
       <Suspense fallback={<div>Loading</div>}>
         <Blog refrs={blogs} />
       </Suspense>
