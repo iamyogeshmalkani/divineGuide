@@ -36,19 +36,16 @@ export default function Testimonial(props) {
     function checkitem(str) {
         setTimeout(() => {
             if ($('.item-1').hasClass('active')) {
-                console.log('first');
                 $('.prev').hide();
                 $('.next').show();
             }
             else if (
                 $(`.item-${Math.ceil(testimonials.length / 3)}`).hasClass('active')
             ) {
-                console.log(Math.ceil(testimonials.length / 3))
                 $('.prev').show();
                 $('.next').hide();
             }
             else {
-                console.log('third')
                 $('.prev').show();
                 $('.next').show();
             }
@@ -57,9 +54,7 @@ export default function Testimonial(props) {
     }
     useEffect(() => {
         let count = 0;
-        console.log($('.carousel-inner').is(':empty'));
         if ($('.carousel-inner').is(':empty')) {
-            console.log('called')
             for (let i = 1; i <= Math.ceil(testimonials.length / 3); i++) {
                 $('.carousel-inner').append(
                     `<div class="carousel-item ${i == 1 ? 'active' : ''} item-${i}">
@@ -118,9 +113,7 @@ export default function Testimonial(props) {
                                 <div class="carousel-inner">
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </section >

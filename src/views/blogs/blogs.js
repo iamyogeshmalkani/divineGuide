@@ -1,22 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './blogs.css'
-import $ from "jquery"
-import blog1 from "../../constants/blog1.text"
-const blogstexts = {}
-
-
 export default function Blog(props) {
-
-    // async function fetchdata() {
-    //     await fetch(blog1)
-    //         .then(r => r.text())
-    //         .then(text => {
-    //             blogstexts['blog1'] = text;
-    //         });
-    // }
-    // useEffect(() => {
-    //     fetchdata();
-    // })
 
     const blogs = [{
         title: 'विभिन्न दिशाओं में चूल्हा रखने का प्रभाव :  वास्तु की नजर से',
@@ -35,14 +19,6 @@ export default function Blog(props) {
     }
     ];
 
-    // async function getYoutubeVideos() {
-
-    //     await fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCPKO9kkNp4Q-5_1sME5qBoQ0X1XbEPubk&channelId=UCN-IfflYOp7wYnlofX_3D5g&part=snippet,id&order=date&maxResults=20')
-    //         .then(response => response.json())
-    //         .then(data => { setvideos(data.items); console.log(data.item) })
-    //         .catch(error => {
-    //         });
-    // }
     return (
         <div className='blogs' ref={props.refrs}>
             <div className='blogs_heading'>
@@ -64,7 +40,6 @@ const BlogCard = function BlogCard(props) {
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
     };
-    console.log(blogstexts);
     return (
         <div className='blog_card'>
             <div className='blogs_card_head  flex-row'>

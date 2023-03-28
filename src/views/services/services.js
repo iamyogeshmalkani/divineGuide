@@ -17,16 +17,9 @@ export default function Services(props) {
     useEffect(() => {
         var elements = document.querySelectorAll('.services_desc');
         elements.forEach(element => {
-            console.log(element);
             if (element.offsetHeight < element.scrollHeight ||
                 element.offsetWidth < element.scrollWidth) {
                 element.nextSibling.style.visibility = 'visible';
-                // your element has overflow and truncated
-                // show read more / read less button
-            } else {
-                console.log('bii')
-
-                // your element doesn't overflow (not truncated)
             }
         });
     }, []);

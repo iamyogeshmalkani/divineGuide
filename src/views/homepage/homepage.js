@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "./homepage.css"
 import $ from "jquery";
-import Sidebar from '../sidebar';
 
-
-// Function used to scroll to a perticular section
 const scrollDown = (ref) => {
-    console.log(ref);
     window.scrollTo({
         top: ref.current.offsetTop,
         behavior: 'smooth',
@@ -50,7 +46,6 @@ export default function Homepage(props) {
         name: "Prasana Kundali", description: "Prashna Kundali Astrology is the best way to know about future predictions even in the condition when a person doesn’t know about their Birth Time. Generally getting a proper answer without Birth Detail gets quite complex, but Prashna Kundali is the Astrology Science that gives you an exact answer about your queries related to your future. Prashna Kundali is a time-based kundali made on the basis of the time when the question was asked by someone. A combination of Prashna Kundali and Birth Kundali can easily solve any problem."
     }]
     function openNav() {
-        console.log('caaled');
         document.getElementById("blogs_updates").style.width = "250px";
         document.getElementById("sidebar").style.width = "100%";
         document.getElementById('sidebar_show').style.width = "calc(100vw - 250px)"

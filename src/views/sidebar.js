@@ -4,8 +4,6 @@ import $ from "jquery"
 
 export default function Sidebar(props) {
     const scrollDown = (ref) => {
-        console.log('cjdshvcj');
-        console.log(ref);
         window.scrollTo({
             top: ref.current.offsetTop,
             behavior: 'smooth',
