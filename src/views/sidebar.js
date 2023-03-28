@@ -34,12 +34,10 @@ export default function Sidebar(props) {
                 <div className='flex-row align-items-center update'>
                     <img src='images/about-us.jpg'></img>
                     <p className='update_title'>विभिन्न दिशाओं में चूल्हा रखने का प्रभाव :  वास्तु की नजर से</p>
-                    <p className='update_date'>03:40 27-03-2023</p>
                 </div>
                 <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs']) }}>
                     <img src='images/about-us.jpg'></img>
                     <p className='update_title'>Astrologer Deepa Gupta received Silver medal for Vastu on October 2018</p>
-                    <p className='update_date'>12:40 27-03-2023</p>
                 </div>
             </div >
 
