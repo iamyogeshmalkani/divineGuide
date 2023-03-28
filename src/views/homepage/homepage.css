@@ -315,6 +315,7 @@
     padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient(to right top, #140d3f, #1a0e43, #200f48, #26104c, #2c1050, #2f1156, #31135d, #341463, #32186e, #2d1c7a, #232186, #0f2692);
+    z-index: 10;
 
 }
 
