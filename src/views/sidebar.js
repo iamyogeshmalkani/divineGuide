@@ -27,9 +27,9 @@ export default function Sidebar(props) {
         <div id='sidebar'>
             <div id='sidebar_show'>
             </div>
-            <div id='blogs_updates' className='flex-col' onClick={() => { scrollDown(props.refrs['blogs']) }}>
+            <div id='blogs_updates' className='flex-col'>
                 <h2 style={{ fontWeight: '600' }}>Updates</h2><a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>
-                <div className='flex-row align-items-center update'>
+                <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs']) }}>
                     <img src='images/about-us.jpg'></img>
                     <p className='update_title'>विभिन्न दिशाओं में चूल्हा रखने का प्रभाव :  वास्तु की नजर से</p>
                 </div>

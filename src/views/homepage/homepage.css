@@ -83,17 +83,6 @@
     opacity: 0.8;
 }
 
-.navbar-brand {
-
-    font-weight: 600;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.navbar-brand img {
-    width: 100px;
-    height: 100px;
-}
-
 .update_fire {
     width: 30px;
     height: 30px;
@@ -196,8 +185,10 @@
 }
 
 .navbar-brand {
-    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 2rem;
+    color: white;
 }
 
 .navbar-brand:focus {

@@ -85,8 +85,8 @@ export default function Homepage(props) {
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { openNav() }}></img>
             </div>
             <nav class="navbar navbar-expand-lg position-relative">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src='icons/brand/Logo.png'></img></a>
+                <div class="container-fluid" style={{ alignItems: 'self-start' }}>
+                    <h1 class="navbar-brand text-heading" href="#">Astrologer Deepa Gupta</h1>
                     <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>
                     </button>

@@ -21,10 +21,9 @@
 
 .update img {
     border-radius: 50%;
-    object-fit: cover;
-    width: 30px;
-    height: auto;
     border: solid grey;
+    width: 50px;
+    clip-path: circle();
 }
 
 #blogs_updates {
@@ -40,6 +39,7 @@
     transition: 0.5s;
     padding-top: 60px;
     gap: 10px;
+
     /* justify-content: center; */
     align-items: center;
 }
@@ -66,10 +66,14 @@
     background-color: white;
     color: black;
     justify-content: space-between;
-    gap: 2px;
+    gap: 10px;
+    padding: 5px;
 }
 
 .update_title {
     font-size: 0.7rem;
-    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
