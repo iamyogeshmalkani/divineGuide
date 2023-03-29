@@ -108,6 +108,16 @@
     margin-bottom: 10% !important;
 }
 
+.QR_image {
+    height: auto;
+    width: auto;
+    /* object-fit: contain; */
+}
+
+.closeQr {
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .services_main_heading {
         width: 100%;

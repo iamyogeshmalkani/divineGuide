@@ -36,7 +36,7 @@
     background-color: white;
     background-image: linear-gradient(to right top, #140d3f, #1a0e43, #200f48, #26104c, #2c1050, #2f1156, #31135d, #341463, #32186e, #2d1c7a, #232186, #0f2692);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 60px;
     gap: 10px;
 
@@ -65,8 +65,7 @@
     padding: 2px;
     background-color: white;
     color: black;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     padding: 5px;
 }
 

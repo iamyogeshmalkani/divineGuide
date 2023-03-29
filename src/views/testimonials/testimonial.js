@@ -102,10 +102,10 @@ export default function Testimonial(props) {
                             <h3 class="mb-3 text-heading testimonial_heading">Testimonial</h3>
                             <p className='text-content'>Its an honour for us to share views of our happy , satisfied, repeated customers. We are 100% successful for providing them best suitable and fruitful guidance.<i class="fa-solid fa-ditto"></i></p>
                             <button class="btn bg-transparent prev w-100" href="#carouselExampleIndicators2" role="button" data-slide="prev" onClick={() => { checkitem(false) }}>
-                                <img className='testimonials_arrow' src='icons/arrow-left.png'></img>
+                                <img className='testimonials_arrow' src='icons/arrow-left.png' alt='prev'></img>
                             </button>
                             <button class="btn bg-transparent next w-100" href="#carouselExampleIndicators2" role="button" data-slide="next" onClick={() => { checkitem(false) }}>
-                                <img className='testimonials_arrow' src='icons/arrow-right.png'></img>
+                                <img className='testimonials_arrow' src='icons/arrow-right.png' alt='next'></img>
                             </button>
                         </div>
                         <div class="col-12">

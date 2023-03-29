@@ -47,9 +47,9 @@
     height: 400px;
     display: inline-block;
     border-radius: 50%;
-    background-image: url('../../../public/images/about-us.jpg');
+    background-image: url('../../../public/images/aboutus.jpg');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     border: 5px solid #3e186d;
 }
 

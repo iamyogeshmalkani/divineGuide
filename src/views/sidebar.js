@@ -3,9 +3,14 @@ import "./sidebar.css"
 import $ from "jquery"
 
 export default function Sidebar(props) {
-    const scrollDown = (ref) => {
+    const scrollDown = (ref, id) => {
+        var h = 0;
+        var blogcards = $('.blog_card');
+        for (let i = 0; i < id - 1; i++) {
+            h += blogcards[i].offsetHeight;
+        }
         window.scrollTo({
-            top: ref.current.offsetTop,
+            top: ref.current.offsetTop + (h),
             behavior: 'smooth',
         });
         closeNav();
@@ -27,16 +32,17 @@ export default function Sidebar(props) {
         <div id='sidebar'>
             <div id='sidebar_show'>
             </div>
+
             <div id='blogs_updates' className='flex-col'>
                 <h2 style={{ fontWeight: '600' }}>Updates</h2><a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>
-                <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs']) }}>
-                    <img src='images/about-us.jpg'></img>
-                    <p className='update_title'>विभिन्न दिशाओं में चूल्हा रखने का प्रभाव :  वास्तु की नजर से</p>
-                </div>
-                <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs']) }}>
-                    <img src='images/about-us.jpg'></img>
-                    <p className='update_title'>Astrologer Deepa Gupta received Silver medal for Vastu on October 2018</p>
-                </div>
+                {props.blogs.map((blog) => {
+                    return (
+                        <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs'], blog.id) }}>
+                            <img src='images/aboutus.jpg' alt='Deepa Gupta Image'></img>
+                            <p className='update_title' style={{ textAlign: 'left' }}>{blog.title}</p>
+                        </div>
+                    )
+                })}
             </div >
 
         </div >
