@@ -31,7 +31,7 @@ export default function Services(props) {
             $('.testimonial_modal_heading').html(data['name']);
             $('.testimonial_modal_description').html(data['description']);
             if (data['name'] != 'Vastu') {
-                $('.service_charge').html(`<br></br>To avail the service, please make payment of Rs ${data['price']} and submit the following form`)
+                $('.service_charge').html(`<br></br>To avail service, please make payment of Rs ${data['price']} per horoscope and submit the following form.<br>Duration(40 Minutes)`)
             }
             else {
                 $('.service_charge').html(`<br></br>Vastu Charges varies as per premises. Please submit the form, we will disclose the details with you once we receive your details`)

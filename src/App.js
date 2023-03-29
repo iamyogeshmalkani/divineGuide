@@ -7,8 +7,6 @@ import Testimonial from './views/testimonials/testimonial';
 import Banner from './views/banner/banner';
 import Sidebar from './views/sidebar';
 import ReactGA from 'react-ga';
-import Lottie from 'react-lottie';
-import Loading from "./lotties/loading_screen.json"
 const TRACKING_ID = "UA-XXXXX-X"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 const Blog = lazy(() => import("./views/blogs/blogs"));
@@ -28,7 +26,7 @@ function App() {
     <br></br>(जो भीतर है वही बाहर है और जो बाहर है वो ही भीतर है ) <br></br> Vasthu principles integrated with architecture boost health, wealth, energy and prosperity and make the living or working atmosphere serene and enlighten.`, price: '2100'
     },
     { name: "Tarot Card Reading", description: "Tarot is a divination tool which is used to get guidance and is commonly used to measure potential outcomes and evaluate influences surrounding a person or an event. It helps to give answers to our daily questions of life.<br></br>The best advice tarot can provide when someone with proper genuine intention ask for best suitable option from multiple options.", price: '1100' },
-    { name: "Hand Writing Analysing", description: "Handwriting analysis can reveal many useful personality traits. It involves Personal Development , self introspection,Compatibility Analysis etc, With the help of handwriting analysis , one can improve themself in all area and many more", price: '2100' },
+    { name: "Hand Writing Analysis", description: "Handwriting analysis can reveal many useful personality traits. It involves Personal Development , self introspection,Compatibility Analysis etc, With the help of handwriting analysis , one can improve themself in all area and many more", price: '2100' },
   ]
   const blogsData = [
     {
@@ -68,15 +66,6 @@ function App() {
       behavior: 'smooth',
     });
   };
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: Loading,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-
   return (
     <div className="App position-relative">
       <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
@@ -84,14 +73,7 @@ function App() {
       </button>
       <Sidebar refrs={refrs} blogs={blogsData} />
       <Banner />
-      <Suspense fallback={
-        <Lottie
-          options={defaultOptions}
-          height="auto"
-          width="90%"
-        />}>
-        <Homepage refrs={refrs} servicesData={servicesData} />
-      </Suspense>
+      <Homepage refrs={refrs} servicesData={servicesData} />
       <AboutUs refrs={aboutSection} />
       <Services refrs={services} servicesData={servicesData} />
       <Testimonial refrs={testimonials} />

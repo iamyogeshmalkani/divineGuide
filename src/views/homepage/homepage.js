@@ -13,13 +13,13 @@ const services_homepage = {
     'Vastu': ['Harmony', 'Health', 'Mental peace', 'Wealth', 'Comfort'],
     'Tarot Card Reading': ['Love and Relationship', 'Marriage', "Confusion Solution"],
     'Match Making': ['Love and Relationship', 'Kundali Matching', 'Child Birth', 'Happy Marrige Consultation'],
-    'Hand Writing Analysing': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
+    'Hand Writing Analysis': ['Personal Development', 'Self Introspection', 'Compatibility Analysis'],
     'Astrology': ['Career', 'Finance', 'Health', 'Court Case', 'Marriage', 'House Purchase'],
     'Prasana Kundali': ['Yes and No  Answer', 'Detailed Analysis of any Question']
 }
 
 const order_services = {
-    'Astrology': 0, 'Match Making': 1, 'Prasana Kundali': 2, 'Vastu': 3, 'Tarot Card Reading': 4, 'Hand Writing Analysing': 5
+    'Astrology': 0, 'Match Making': 1, 'Prasana Kundali': 2, 'Vastu': 3, 'Tarot Card Reading': 4, 'Hand Writing Analysis': 5
 }
 
 export default function Homepage(props) {
@@ -110,14 +110,14 @@ export default function Homepage(props) {
                     <img src='icons/navbar/Tarot Card Reading.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')} alt='Tarot Card' ></img>
                     {/* <img src='https://cdn-icons-png.flaticon.com/512/5005/5005657.png' className='center_image'></img> */}
                     <img src='icons/navbar/Match Making.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Match Making')} alt='Match Making'></img>
-                    <img src='icons/navbar/Hand Writing Analysing.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Hand Writing Analysing')}></img>
+                    <img src='icons/navbar/Hand Writing Analysis.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Hand Writing Analysis')}></img>
                     <img src='icons/navbar/Astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')} alt='Astrology'></img>
                     <img src='icons/navbar/Prasana Kundali.png' className='service_prasana_kundali' style={{ borderRadius: '50%' }} data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Prasana Kundali')} alt='Prasana Kundali'></img>
                 </div>
             </div>
             <div className='social_medias flex-row'>
                 <a href='https://www.facebook.com/deepagupta09?mibextid=ZbWKw' target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href='https://whatsapp.com' target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href='https://wa.me/8130025582' target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href='https://www.youtube.com/@astrologerdeepagupta' target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 <a href='https://instagram.com' target="_blank"><i class="fa-brands fa-instagram"></i></a>
 

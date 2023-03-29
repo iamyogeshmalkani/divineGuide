@@ -165,6 +165,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
 }
 
 .nav-link sup img {
