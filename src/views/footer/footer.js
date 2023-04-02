@@ -15,7 +15,7 @@ export default function Footer(props) {
             <div className="flex-col aboutus_footer">
                 <h1>Astrologer Deepa Gupta</h1>
                 <br></br>
-                <p>The renowned astrologer.
+                <p><span style={{ fontSize: '1.5rem' }}>The renowned astrologer.</span><br />
                     Astrology depicts Account of stars, providing guidance to make you star</p>
             </div>
             <div className="flex-col">
