@@ -27,7 +27,7 @@ export default function Homepage(props) {
         $('#services_homepage_modal_title').html(str);
         let services_html = ``;
         services_homepage[str].map((service) => {
-            services_html += `<div class="flex-row"><img src="icons/${service}.png"></img><p>${service}</p></div>`
+            services_html += `<div className="flex-row"><img src="icons/${service}.png"></img><p>${service}</p></div>`
         })
         $('.services_offered').html(services_html);
         $('.services_homepage_image').attr('src', `icons/navbar/${str}.png`)
@@ -69,34 +69,33 @@ export default function Homepage(props) {
     }
     const [displayUpdates, setdisplayUpdates] = useState(false);
     return (
-        <div className='homepage'>
-            {/* <img src='images/service_bg1.webp' className='position-absolute homepage_bg'></img> */}
-            <div class="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
+        <div className='homepage' ref={props.refrs['home']}>
+            <div className="container-fluid d-flex flex-row justify-content-end mail_num" style={{ gap: '10px' }}>
                 <div className='mail_and_num flex-row'>
-                    <div className='flex-row num'><i class="fa-solid fa-phone" style={{ color: "white" }}></i><a href="tel:+918130025582">+91-8130025582</a></div>
-                    <div className='flex-row mail'><i class="fa-solid fa-envelope" style={{ color: "white" }}></i><a href='mailto:officialastrologerDeepagupta@gmail.com'>officialastrologerDeepagupta@gmail.com</a></div>
+                    <div className='flex-row num'><i className="fa-solid fa-phone" style={{ color: "white" }}></i><a href="tel:+918130025582">+91-8130025582</a></div>
+                    <div className='flex-row mail'><i className="fa-solid fa-envelope" style={{ color: "white" }}></i><a href='mailto:officialastrologerDeepagupta@gmail.com'>officialastrologerDeepagupta@gmail.com</a></div>
                 </div>
                 <img src='icons/fire-update.png' className='update_fire' onClick={() => { openNav() }} alt='New Blogs'></img>
             </div>
-            <nav class="navbar navbar-expand-lg position-relative">
-                <div class="container-fluid" style={{ alignItems: 'self-start' }}>
-                    <h1 class="navbar-brand text-heading" href="#">Astrologer Deepa Gupta</h1>
-                    <button class="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav className="navbar navbar-expand-lg position-relative">
+                <div className="container-fluid" style={{ alignItems: 'self-start' }}>
+                    <h1 className="navbar-brand text-heading" href="#">Astrologer Deepa Gupta</h1>
+                    <button className="navbar-toggler navbar_mobile_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="icons/navbar/mobilenavbar.svg" alt='-'></img>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" onClick={() => { scrollDown(props.refrs['about']) }}>ABOUT US</a>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul className="navbar-nav mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <p aria-label='About-Us' className="nav-link" onClick={() => { scrollDown(props.refrs['about']) }}>ABOUT US</p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" onClick={() => { scrollDown(props.refrs['services']) }}>SERVICES</a>
+                            <li className="nav-item">
+                                <p aria-label='Services' className="nav-link" onClick={() => { scrollDown(props.refrs['services']) }}>SERVICES</p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</a>
+                            <li className="nav-item">
+                                <p aria-label='Testimonials' className="nav-link" onClick={() => { scrollDown(props.refrs['testimonials']) }}>TESTIMONIALS</p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup><img src='icons/navbar/new-1.png'></img></sup></a>
+                            <li className="nav-item">
+                                <p aria-label='Blogs' className="nav-link" onClick={() => { scrollDown(props.refrs['blogs']) }}>BLOGS<sup><img src='icons/navbar/new-1.png' alt='new'></img></sup></p>
                             </li>
                         </ul>
                     </div>
@@ -106,35 +105,27 @@ export default function Homepage(props) {
                 <h1 className='tagLine'><b>Astrology</b> depicts Account of <b>stars</b>, providing guidance to make you <b>star</b></h1>
                 <div className='services_homepage'>
                     {/* <img src='images/service_bg1.webp' className='service_bg'></img> */}
-                    <img src='icons/navbar/Vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')} alt='Vatu'></img>
-                    <img src='icons/navbar/Tarot Card Reading.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')} alt='Tarot Card' ></img>
-                    {/* <img src='https://cdn-icons-png.flaticon.com/512/5005/5005657.png' className='center_image'></img> */}
-                    <img src='icons/navbar/Match Making.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Match Making')} alt='Match Making'></img>
-                    <img src='icons/navbar/Hand Writing Analysis.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Hand Writing Analysis')}></img>
-                    <img src='icons/navbar/Astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')} alt='Astrology'></img>
-                    <img src='icons/navbar/Prasana Kundali.png' className='service_prasana_kundali' style={{ borderRadius: '50%' }} data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Prasana Kundali')} alt='Prasana Kundali'></img>
+                    <img src='icons/navbar/Vastu.png' className='service_vastu' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Vastu')} alt='Vastu' loading='lazy'></img>
+                    <img src='icons/navbar/Tarot Card Reading.png' className='service_tarot' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Tarot Card Reading')} alt='Tarot Card' loading='lazy' ></img>
+                    <img src='icons/navbar/Match Making.png' className='service_l_r' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Match Making')} alt='Match Making' loading='lazy'></img>
+                    <img src='icons/navbar/Hand Writing Analysis.png' className='service_writing_read' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Hand Writing Analysis')} alt='Hand Writing' loading='lazy'></img>
+                    <img src='icons/navbar/Astrology.png' className='service_astrology' data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Astrology')} alt='Astrology' loading='lazy'></img>
+                    <img src='icons/navbar/Prasana Kundali.png' className='service_prasana_kundali' style={{ borderRadius: '50%' }} data-toggle="modal" data-target="#services_homepage_modal" onClick={() => modalHandler('Prasana Kundali')} alt='Prasana Kundali' loading='lazy'></img>
                 </div>
             </div>
-            <div className='social_medias flex-row'>
-                <a href='https://www.facebook.com/deepagupta09?mibextid=ZbWKw' target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href='https://wa.me/8130025582' target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href='https://www.youtube.com/@astrologerdeepagupta' target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href='https://instagram.com' target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-            </div>
-            <div class="modal fade" id="services_homepage_modal" tabindex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered m-auto" role="document">
+            <div className="modal fade" id="services_homepage_modal" tabIndex="-1" role="dialog" aria-labelledby="services_homapge_modal" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered m-auto" role="document">
 
                     <div className='modal-content bg-transparent'>
                         <p id='services_homepage_modal_title' style={{ display: 'none' }}></p>
-                        <div class="modal-header" style={{ display: 'none' }}>
-                            <button type="button" class="close service_homepage_modal_close" data-dismiss="modal" aria-label="Close">
+                        <div className="modal-header" style={{ display: 'none' }}>
+                            <button type="button" className="close service_homepage_modal_close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="services_hover_card" onClick={() => { scrollToService() }}>
+                        <div className="services_hover_card" onClick={() => { scrollToService() }}>
 
-                            <div class="service_hover_card_img" >
+                            <div className="service_hover_card_img" >
                                 <img className='services_homepage_image' src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg" alt="user-image" />
                             </div>
                             <div className='flex-col'>

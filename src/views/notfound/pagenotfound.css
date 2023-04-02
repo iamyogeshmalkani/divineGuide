@@ -1,0 +1,38 @@
+.page_404 {
+    background: #171D2A;
+    font-family: 'Arvo', serif;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    color: white;
+}
+
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg img {
+    height: 500px;
+    border: none;
+    width: auto;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+
+.contant_box_404 {
+    margin-top: -50px;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .four_zero_four_bg img {
+        height: 400px;
+        border: none;
+        width: auto;
+    }
+
+}

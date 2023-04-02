@@ -1,0 +1,40 @@
+.panel {
+    padding: 30px;
+}
+
+.edit_sections {
+    padding: 10px;
+    margin-top: 50px !important;
+    border-radius: 10px;
+}
+
+.section {
+    gap: 20px;
+    width: 60%;
+    margin: auto !important;
+    padding-top: 50px;
+}
+
+.Services_list {
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 20px;
+    padding-top: 50px;
+    height: fit-content;
+}
+
+.testimonials_list {
+    max-width: 40%;
+    flex-wrap: wrap;
+    padding-top: 50px;
+
+}
+
+.panel_testimonial {
+    width: 40%;
+    cursor: pointer;
+}
+
+.panel_blog {
+    cursor: pointer;
+}

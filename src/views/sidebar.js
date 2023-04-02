@@ -34,10 +34,10 @@ export default function Sidebar(props) {
             </div>
 
             <div id='blogs_updates' className='flex-col'>
-                <h2 style={{ fontWeight: '600' }}>Updates</h2><a href="javascript:void(0)" class="closebtn" onClick={() => { closeNav() }}>×</a>
-                {props.blogs.map((blog) => {
+                <h2 style={{ fontWeight: '600' }}>Updates</h2><p aria-label='close-sidebar' className="closebtn" onClick={() => { closeNav() }}>×</p>
+                {props.blogs.map((blog, ind) => {
                     return (
-                        <div className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs'], blog.id) }}>
+                        <div key={ind} className='flex-row align-items-center update' onClick={() => { scrollDown(props.refrs['blogs'], blog.id) }}>
                             <img src='images/aboutus.jpg' alt='Deepa Gupta Image'></img>
                             <p className='update_title' style={{ textAlign: 'left' }}>{blog.title}</p>
                         </div>

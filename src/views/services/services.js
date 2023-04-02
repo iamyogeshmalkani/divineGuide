@@ -11,9 +11,13 @@ export default function Services(props) {
         if (str == 'Match Making') {
             window.open('https://forms.gle/iuxUkHVx5FsHTvFR7');
         }
+        else if (str == 'Vastu') {
+            window.open('https://forms.gle/CYYFpqoZkaHAkdvc6')
+        }
         else {
             window.open('https://forms.gle/P6wX9nUZBjd3QMDF9');
         }
+
     }
     useEffect(() => {
         var elements = document.querySelectorAll('.services_desc');
@@ -46,33 +50,33 @@ export default function Services(props) {
 
             <div className='services_Offered flex-row'>
                 {
-                    props.servicesData.map((d) => {
-                        return (<div class="card service_card" data-toggle="modal" data-target="#testimonial_modal" onClick={() => serviceModalHandler(d)} >
-                            <img src={`icons/services/${d['name']}.jpg`} class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">{d['name']}</h5>
+                    props.servicesData.map((d, ind) => {
+                        return (<div key={ind} className="card service_card" data-toggle="modal" data-target="#testimonial_modal" onClick={() => serviceModalHandler(d)} >
+                            <img src={`icons/services/${d['name']}.jpg`} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">{d['name']}</h5>
                                 <div className='card_title mb-2'></div>
-                                <p class="card-text text-content  services_desc">{d['description']}</p>
-                                <a class='readmore' style={{ visibility: 'hidden' }} onClick={() => serviceModalHandler(d)}>Read More</a>
+                                <p className="card-text text-content  services_desc">{d['description']}</p>
+                                <p aria-label='Read-More' className='readmore' style={{ visibility: 'hidden' }} onClick={() => serviceModalHandler(d)}>Read More</p>
                             </div>
                         </div>)
                     })
                 }
             </div>
-            <div class="modal" id="testimonial_modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered m-auto" role="document">
-                    <div class="modal-content" style={{ borderRadius: '20px', maxHeight: '500px' }}>
-                        <div class="testimonial_modal_card" style={{ borderRadius: '50px' }}>
+            <div className="modal" id="testimonial_modal" tabndex="-1" role="dialog">
+                <div className="modal-dialog modal-dialog-centered m-auto" role="document">
+                    <div className="modal-content" style={{ borderRadius: '20px', maxHeight: '500px' }}>
+                        <div className="testimonial_modal_card" style={{ borderRadius: '50px' }}>
                             <div className='close' data-dismiss="modal">
-                                <i class="fa-solid fa-circle-xmark float-right"></i>
+                                <i className="fa-solid fa-circle-xmark float-right"></i>
                             </div>
-                            <div class="service_hover_card_img">
+                            <div className="service_hover_card_img">
                                 <img className='testimonial_modal_image' src="" alt="user-image" />
                             </div>
                             <div className='flex-col'>
                                 <h2 className='testimonial_modal_heading text-heading'></h2>
                                 <div className='closeQr' style={{ display: qrshow ? 'block' : 'none' }} onClick={() => { var qr = qrshow; setqrshow(!qr) }}>
-                                    <i class="fa-solid fa-circle-xmark float-right"></i>
+                                    <i className="fa-solid fa-circle-xmark float-right"></i>
                                 </div>
                                 <img style={{ display: qrshow ? 'block' : 'none' }} src='images/QR.jpg' className='QR_image' alt='QR_Code'></img>
                                 <p className='testimonial_modal_description text-content' style={{ display: !qrshow ? 'block' : 'none', fontWeight: '600' }}></p>

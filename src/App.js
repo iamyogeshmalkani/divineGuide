@@ -1,12 +1,16 @@
 import './App.css';
 import { useRef } from 'react';
 import { Suspense, lazy } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Panel from './views/panel/mainpage';
+import PageNotFound from './views/notfound/pagenotfound';
 import Services from './views/services/services';
 import AboutUs from './views/aboutUs/aboutUs';
 import Testimonial from './views/testimonials/testimonial';
 import Banner from './views/banner/banner';
 import Sidebar from './views/sidebar';
 import ReactGA from 'react-ga';
+import Footer from './views/footer/footer';
 const TRACKING_ID = "UA-XXXXX-X"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 const Blog = lazy(() => import("./views/blogs/blogs"));
@@ -59,29 +63,52 @@ function App() {
   const services = useRef(null);
   const testimonials = useRef(null);
   const blogs = useRef(null);
-  const refrs = { 'about': aboutSection, 'services': services, 'testimonials': testimonials, 'blogs': blogs };
+  const home = useRef(null);
+  const refrs = {
+    'home': home, 'about': aboutSection, 'services': services, 'testimonials': testimonials, 'blogs': blogs
+  };
   const scrollToTop = (ref) => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
-  return (
-    <div className="App position-relative">
-      <button class="btn totop" type="submit" onClick={() => { scrollToTop() }}>
+  const MainPage = function () {
+    return (
+      <div> <button className="btn totop" type="submit" onClick={() => { scrollToTop() }}>
         <img src='icons/arrow-up.svg' alt='up-arrow'></img>
       </button>
-      <Sidebar refrs={refrs} blogs={blogsData} />
-      <Banner />
-      <Homepage refrs={refrs} servicesData={servicesData} />
-      <AboutUs refrs={aboutSection} />
-      <Services refrs={services} servicesData={servicesData} />
-      <Testimonial refrs={testimonials} />
-      <hr class="solid"></hr>
-      <Suspense fallback={<div>Blogs Loading...</div>}>
-        <Blog refrs={blogs} blogs={blogsData} />
-      </Suspense>
+        <Sidebar refrs={refrs} blogs={blogsData} />
+        <Banner />
+        <Homepage refrs={refrs} servicesData={servicesData} />
+        <AboutUs refrs={aboutSection} />
+        <Services refrs={services} servicesData={servicesData} />
+        <Testimonial refrs={testimonials} />
+        <hr className="solid"></hr>
+        <Suspense fallback={<div>Blogs Loading...</div>}>
+          <Blog refrs={blogs} blogs={blogsData} />
+        </Suspense>
+        <Footer refrs={refrs} /></div>
+    )
+  }
+  return (
+    <div className="App position-relative" >
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="*" element={<PageNotFound />} />
+          {/* <Route path="/panel" element={<Panel />} /> */}
+        </Routes>
+      </BrowserRouter>
+
     </div >
   );
+
 }
 export default App;
+
+
+
+
+
+
